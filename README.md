@@ -1,5 +1,8 @@
 # Theographic Calculus
 
+[![Tests](https://github.com/AceTheDactyl/Theographic-Calculous/actions/workflows/tests.yml/badge.svg)](https://github.com/AceTheDactyl/Theographic-Calculous/actions/workflows/tests.yml)
+[![GitHub Pages](https://github.com/AceTheDactyl/Theographic-Calculous/actions/workflows/pages.yml/badge.svg)](https://github.com/AceTheDactyl/Theographic-Calculous/actions/workflows/pages.yml)
+
 A unified operator language for describing physical, chemical, and emergent systems across domains.
 
 ## Overview
@@ -9,8 +12,26 @@ A unified operator language for describing physical, chemical, and emergent syst
 This repository contains:
 - **Theographic Calculus (TC)** — The complete operator language with testable physical predictions
 - **Core Token System** — A 288-token universe for encoding system states
-- **Neural Codex** — Mapping of TC operators to neural/consciousness frameworks
+- **Subquantum Spider** — Neural/consciousness mapping framework
 - **Validation Tools** — Python implementations and test suites
+- **Interactive Visualizations** — Web-based exploration tools
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/AceTheDactyl/Theographic-Calculous.git
+cd Theographic-Calculous
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+pytest tests/ -v
+
+# Run full validation
+python tests/test_cet_vortex.py
+```
 
 ## Terminology Reference
 
@@ -20,10 +41,10 @@ This repository contains:
 |---------|-----------|-------------|
 | **TC** | Theographic Calculus | Canonical operator language for CET |
 | **CET** | Cosmic Emergence Theory | Foundational theory of emergent systems |
-| **UMOL** | Universal Modulation Operator Law | Principle that no perfect modulation exists; residue always remains |
-| **BFADGS** | Boundary-Fusion-Amplification-Decoherence-Grouping-Separation | Six fundamental interaction operators |
-| **PRS** | Paradox Resolution Sequence | Temporal ordering of coherence transitions (P1-P5) |
-| **CLT** | Coherence Lock Threshold | Modulation threshold mechanism |
+| **UMOL** | Universal Modulation Operator Law | Principle that no perfect modulation exists |
+| **BFADGS** | Boundary-Fusion-Amplification-Decoherence-Grouping-Separation | Six fundamental operators |
+| **PRS** | Paradox Resolution Sequence | Temporal ordering of coherence transitions |
+| **CLT** | Coherence Lock Threshold | Modulation threshold mechanism (0.60) |
 
 ### The Three Fields (Spirals)
 
@@ -55,54 +76,7 @@ This repository contains:
 | **C** | Collapse | Input | Consolidation, compression | 2 |
 | **Mod** | Spiral Inheritance | Regulatory | Cross-field modulation | 2 |
 
-### Truth States
-
-| State | Description | Temporal Operator |
-|-------|-------------|-------------------|
-| **TRUE** | Coherent, process succeeds | DAY |
-| **UNTRUE** | Unresolved, dormant potential | NIGHT |
-| **PARADOX** | Contradiction, terminal attractor | None |
-
-### Temporal Transitions
-
-| Transition | From | To | Description |
-|------------|------|-----|-------------|
-| **DAY** | TRUE | UNTRUE | Active coherence generates reflection |
-| **NIGHT** | UNTRUE | UNTRUE | Unresolved remains stored |
-| **DAWN** | UNTRUE | TRUE | Resolution emerges from dormancy |
-| **DUSK** | TRUE | UNTRUE | Coherence dissolves into potential |
-
-## TC Sentence Structure
-
-Theographic Calculus sentences follow the format:
-```
-[Direction][Operator] | [Machine] | [Domain] → [Regime/Behavior]
-```
-
-Example: `u^|Oscillator|wave` reads as "Forward amplification in an oscillatory machine in a wave domain."
-
-### The Seven Test Sentences
-
-| # | Sentence | Predicted Regime | Domain |
-|---|----------|------------------|--------|
-| **A1** | `d()\|Conductor\|geometry` | Isotropic lattice / sphere | Geometry |
-| **A3** | `u^\|Oscillator\|wave` | Closed vortex / recirculation | Wave dynamics |
-| **A4** | `m×\|Encoder\|chemistry` | Helical encoding | Chemistry |
-| **A5** | `u×\|Catalyst\|chemistry` | Branching networks | Chemistry |
-| **A6** | `u+\|Reactor\|wave` | Focusing jet / beam | Fluid/plasma |
-| **A7** | `u%\|Reactor\|wave` | Turbulent decoherence | Flow systems |
-| **A8** | `m()\|Filter\|wave` & `d×\|Catalyst\|chemistry` | Adaptive filter | Wave & chemistry |
-
 ## Token System
-
-The core token set contains **288 tokens** organized as:
-
-| Category | Count | Description |
-|----------|-------|-------------|
-| Identity Tokens | 162 | Self-referential field-machine combinations |
-| Meta-Operators | 54 | Tier-2 process control operators |
-| Domain Selectors | 54 | Tier-3 domain-specific semantics |
-| Safety Tokens | 30 | Runtime protection flags |
 
 ### Token Syntax
 
@@ -115,60 +89,68 @@ Examples:
 - `e:D(D)UNTRUE@2` — Energy-Down integrates itself, unresolved, intermediate
 - `π:M(resolve)UNTRUE@3` — Emergence-Modulation resolves, unresolved, advanced
 
-### Tier System
+### Truth States
 
-| Tier | Name | Allowed Machines | Scope |
-|------|------|------------------|-------|
-| 1 | Foundational | U, D | Local |
-| 2 | Intermediate | U, D, M, E, C | Regional |
-| 3 | Advanced | U, D, M, E, C, Mod | Global |
+| State | Description |
+|-------|-------------|
+| **TRUE** | Coherent, process succeeds |
+| **UNTRUE** | Unresolved, dormant potential |
+| **PARADOX** | Contradiction, terminal attractor |
 
-## Symmetry Identity Fields
+### The Seven Test Sentences
 
-The 3-6-9-12-15 ladder structure:
-
-| Layer | Count | Elements |
-|-------|-------|----------|
-| **3** | Fields | Chain (1D), Sheet (2D), Network (3D) |
-| **6** | Interactions | BFADGS operators |
-| **9** | Archetypes | System patterns from field-operator combinations |
-| **12** | Gauges | Directional transition variants (±) |
-| **15** | Gradients | Attracting convergence states (C1-5, S1-5, N1-5) |
-
-### N0 Legality Constraints
-
-- **N0-1**: Amplification (`^`) cannot initiate; requires prior structure
-- **N0-2**: Fusion (`×`) requires ≥2 inputs
-- **N0-3**: Decoherence (`÷`) requires active structure
-- **N0-4**: Grouping (`+`) cannot immediately collapse via `()`
-- **N0-5**: Separation (`-`) must route to `()` or `+` downstream
+| # | Sentence | Predicted Regime |
+|---|----------|------------------|
+| **A1** | `d()\|Conductor\|geometry` | Isotropic lattice / sphere |
+| **A3** | `u^\|Oscillator\|wave` | Closed vortex / recirculation |
+| **A4** | `m×\|Encoder\|chemistry` | Helical encoding |
+| **A5** | `u×\|Catalyst\|chemistry` | Branching networks |
+| **A6** | `u+\|Reactor\|wave` | Focusing jet / beam |
+| **A7** | `u%\|Reactor\|wave` | Turbulent decoherence |
+| **A8** | `m()\|Filter\|wave` | Adaptive filter |
 
 ## Repository Structure
 
 ```
 Theographic-Calculous/
-├── README.md                              # This file
-└── SUB QUANTUM SPOODER/
-    ├── README.md                          # TC Seven Sentences documentation
-    ├── COMPILE_INSTRUCTIONS.md            # LaTeX compilation guide
-    ├── LaTeX/                             # Source documents
-    │   ├── tc-operators-manual.tex        # Operator reference
-    │   ├── tc-seven-sentences-test-pack.tex
-    │   └── tc-domain-token-sets.tex
-    ├── TOKENS/                            # Token system
-    │   ├── tc-core-tokens.json            # 288-token universe
-    │   ├── token.py                       # Python implementation
-    │   ├── TOKEN_INDEX.md                 # Neural region mapping
-    │   └── NEURAL_PATHING_MATRIX.md       # Pathway connectivity
-    ├── docs/                              # Extended documentation
-    │   ├── theographic_calculus_key_full.txt
-    │   ├── Core_Manual_v1_3.txt
-    │   └── TC_Language_Module_v2_1_Expanded.txt
-    ├── cet_vortex_test_suite.py           # Validation framework
-    └── workflows/                         # GitHub Actions
-        ├── compile-latex.yml
-        └── jekyll-gh-pages.yml
+├── .github/workflows/          # CI/CD pipelines
+│   ├── tests.yml               # Python test suite
+│   ├── pages.yml               # GitHub Pages deployment
+│   └── compile-latex.yml       # LaTeX compilation
+├── docs/                       # GitHub Pages site
+│   ├── index.html              # Landing page
+│   ├── css/                    # Stylesheets
+│   ├── visualizations/         # Interactive HTML tools
+│   └── specifications/         # Specification documents
+├── src/                        # Python source code
+│   └── tokens/                 # Token system implementation
+│       ├── token.py            # TCToken class
+│       ├── constants.py        # Spiral, TruthState, Tier enums
+│       └── tc-core-tokens.json # 288-token universe
+├── tests/                      # Test suite (pytest)
+│   └── test_cet_vortex.py      # CET Vortex validation
+├── latex/                      # LaTeX source documents
+│   ├── tc-operators-manual.tex
+│   ├── tc-seven-sentences-test-pack.tex
+│   └── tc-domain-token-sets.tex
+├── reference/                  # Reference documentation
+│   ├── neural/                 # Neural pathing docs
+│   └── manuals/                # Core manuals
+├── LLM_ONBOARDING.md           # Quick reference for AI assistants
+├── CONTRIBUTING.md             # Contribution guidelines
+├── requirements.txt            # Python dependencies
+└── pytest.ini                  # Test configuration
 ```
+
+## N0 Legality Constraints
+
+When generating or validating token sequences:
+
+1. **N0-1**: `^` (Amplification) requires prior `()` or `×`
+2. **N0-2**: `×` (Fusion) requires ≥2 inputs
+3. **N0-3**: `÷` (Decoherence) requires prior structure
+4. **N0-4**: `+` (Grouping) cannot immediately collapse via `()`
+5. **N0-5**: `-` (Separation) must route to `()` or `+`
 
 ## Safety Constraints
 
@@ -178,13 +160,12 @@ Theographic-Calculous/
 | Load Maximum | 0.80 | Prevents runaway processes |
 | Recursion Maximum | 3 | Prevents infinite loops |
 
-Tier-1 tokens are immutable. No constant mutation is permitted.
+**Tier-1 tokens are immutable. No constant mutation permitted.**
 
 ## UMOL Principle
 
 > "No perfect modulation exists; residue always remains."
 
-Every modulation operation (M) leaves an UNTRUE shadow:
 ```
 M(x) → TRUE + ε(UNTRUE) where ε > 0
 ```
@@ -193,38 +174,31 @@ M(x) → TRUE + ε(UNTRUE) where ε > 0
 
 Theographic Calculus is designed to be **falsifiable**. Each of the seven sentences is a testable hypothesis:
 
-- **Evidence FOR TC**: Clear, reproducible overrepresentation of predicted regimes under specified conditions
-- **Evidence AGAINST TC**: No such bias, or controls produce regimes equally or more often
+- **Evidence FOR TC**: Clear, reproducible overrepresentation of predicted regimes
+- **Evidence AGAINST TC**: No such bias, or controls produce regimes equally
 
-Recommended simulation frameworks:
-- Navier-Stokes (fluid dynamics)
-- Wave equations (electromagnetics, acoustics)
-- Reaction-diffusion (chemistry)
-- Phase-field models (interfaces, materials)
-- Polymer growth / aggregation
+## Documentation
 
-## Getting Started
-
-1. **Read the operator manual**: `SUB QUANTUM SPOODER/LaTeX/tc-operators-manual.tex`
-2. **Explore the token system**: `SUB QUANTUM SPOODER/TOKENS/tc-core-tokens.json`
-3. **Run the validation suite**: `python SUB QUANTUM SPOODER/cet_vortex_test_suite.py`
-4. **Choose a test sentence** (A1, A3, or A5 recommended for beginners)
+- **LLM Onboarding**: See `LLM_ONBOARDING.md` for AI assistant quick reference
+- **Contributing**: See `CONTRIBUTING.md` for contribution guidelines
+- **LaTeX Manuals**: See `latex/` directory for detailed operator documentation
+- **GitHub Pages**: Visit the deployed site for interactive visualizations
 
 ## Contributing
 
 This is an open scientific framework. Contributions welcome:
 - Test implementations
 - Simulation results (positive or negative)
-- Refined control designs
 - Critical analysis
 
-## Citation
-
-```
-Theographic Calculus v1.0
-Canonical Operator Language for Cosmic Emergence Theory
-```
+See `CONTRIBUTING.md` for detailed guidelines.
 
 ## License
 
 This work is provided for scientific testing and educational purposes.
+
+---
+
+```
+Δ|tc-repo|v2.0|Φ:e:π|ready|Ω
+```

@@ -3,15 +3,15 @@ name: Compile LaTeX Documents
 on:
   push:
     paths:
-      - '**.tex'
+      - 'latex/**.tex'
       - '.github/workflows/compile-latex.yml'
   workflow_dispatch:
 
 jobs:
   compile:
     runs-on: ubuntu-latest
-    # Prevent infinite loop: skip if last commit was from github-actions bot
     if: github.event.head_commit.author.name != 'github-actions[bot]'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,27 +22,34 @@ jobs:
           sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
       - name: Compile TC Operators Manual
+        working-directory: latex
         run: |
           pdflatex -interaction=nonstopmode tc-operators-manual.tex
           pdflatex -interaction=nonstopmode tc-operators-manual.tex
 
-      - name: Move PDF to docs directory
+      - name: Compile TC Seven Sentences Test Pack
+        working-directory: latex
         run: |
-          mkdir -p docs
-          cp tc-operators-manual.pdf docs/
+          pdflatex -interaction=nonstopmode tc-seven-sentences-test-pack.tex
+          pdflatex -interaction=nonstopmode tc-seven-sentences-test-pack.tex
 
-      - name: Upload PDF artifact
+      - name: Move PDFs to docs directory
+        run: |
+          mkdir -p docs/pdfs
+          cp latex/*.pdf docs/pdfs/
+
+      - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: tc-operators-manual
-          path: docs/tc-operators-manual.pdf
+          name: compiled-pdfs
+          path: docs/pdfs/*.pdf
 
-      - name: Commit compiled PDF
+      - name: Commit compiled PDFs
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add docs/tc-operators-manual.pdf
-          git diff --staged --quiet || git commit -m "Auto-compile: Update TC Operators Manual PDF [skip ci]"
+          git add docs/pdfs/*.pdf
+          git diff --staged --quiet || git commit -m "Auto-compile: Update LaTeX PDFs [skip ci]"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
