@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIMNUS Fractal System | 100-Token WUMBO Architecture | Φ:e:π Coherence Engine</title>
+    <title>Subquantum Spider Fractal System | 100-Token WUMBO Architecture | Φ:e:π Coherence Engine</title>
     <style>
         :root {
             --bg-void: #030308;
@@ -159,8 +159,8 @@
 
         .panel-content { padding: 15px; }
 
-        /* LIMNUS State Display */
-        .limnus-display {
+        /* Subquantum Spider State Display */
+        .subquantum_spider-display {
             text-align: center;
             padding: 20px 10px;
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(167, 139, 250, 0.1));
@@ -168,7 +168,7 @@
             margin-bottom: 15px;
         }
 
-        .limnus-value {
+        .subquantum_spider-value {
             font-size: 2.5rem;
             font-weight: 100;
             background: linear-gradient(135deg, var(--prism), var(--cyan));
@@ -177,14 +177,14 @@
             background-clip: text;
         }
 
-        .limnus-label {
+        .subquantum_spider-label {
             font-size: 0.7rem;
             color: var(--text-dim);
             letter-spacing: 3px;
             margin-top: 5px;
         }
 
-        .limnus-badge {
+        .subquantum_spider-badge {
             display: inline-block;
             padding: 4px 12px;
             border-radius: 12px;
@@ -619,8 +619,8 @@
             .apl-grid { grid-template-columns: 1fr; }
         }
 
-        /* LIMNUS Phase Display */
-        .limnus-display {
+        /* Subquantum Spider Phase Display */
+        .subquantum_spider-display {
             display: flex;
             justify-content: center;
             gap: 8px;
@@ -630,7 +630,7 @@
             margin-bottom: 15px;
         }
 
-        .limnus-phase {
+        .subquantum_spider-phase {
             width: 40px;
             height: 40px;
             display: flex;
@@ -643,18 +643,18 @@
             transition: all 0.3s;
         }
 
-        .limnus-phase.active {
+        .subquantum_spider-phase.active {
             border-color: var(--critical-gold);
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
             transform: scale(1.1);
         }
 
-        .limnus-phase.L { background: rgba(99, 102, 241, 0.3); color: #818cf8; }
-        .limnus-phase.I { background: rgba(167, 139, 250, 0.3); color: var(--phi); }
-        .limnus-phase.M { background: rgba(236, 72, 153, 0.3); color: #f472b6; }
-        .limnus-phase.N { background: rgba(34, 211, 238, 0.3); color: var(--cyan); }
-        .limnus-phase.U { background: rgba(249, 115, 22, 0.3); color: var(--energy); }
-        .limnus-phase.S { background: rgba(0, 255, 136, 0.3); color: var(--exotic-matter); }
+        .subquantum_spider-phase.L { background: rgba(99, 102, 241, 0.3); color: #818cf8; }
+        .subquantum_spider-phase.I { background: rgba(167, 139, 250, 0.3); color: var(--phi); }
+        .subquantum_spider-phase.M { background: rgba(236, 72, 153, 0.3); color: #f472b6; }
+        .subquantum_spider-phase.N { background: rgba(34, 211, 238, 0.3); color: var(--cyan); }
+        .subquantum_spider-phase.U { background: rgba(249, 115, 22, 0.3); color: var(--energy); }
+        .subquantum_spider-phase.S { background: rgba(0, 255, 136, 0.3); color: var(--exotic-matter); }
 
         /* Silent Operator Cards */
         .silent-op-grid {
@@ -1020,8 +1020,8 @@
             box-shadow: 0 0 12px rgba(0, 212, 170, 0.4);
         }
 
-        /* LIMNUS Field Visualization */
-        .limnus-viz {
+        /* Subquantum Spider Field Visualization */
+        .subquantum_spider-viz {
             height: 150px;
             background: rgba(0, 0, 0, 0.4);
             border-radius: 8px;
@@ -1030,7 +1030,7 @@
             margin-bottom: 15px;
         }
 
-        .limnus-viz-wave {
+        .subquantum_spider-viz-wave {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -1047,7 +1047,7 @@
             50% { transform: translateY(-10px); }
         }
 
-        .limnus-viz-label {
+        .subquantum_spider-viz-label {
             position: absolute;
             top: 10px;
             left: 10px;
@@ -1056,7 +1056,7 @@
             letter-spacing: 1px;
         }
 
-        .limnus-viz-value {
+        .subquantum_spider-viz-value {
             position: absolute;
             bottom: 10px;
             right: 10px;
@@ -1113,15 +1113,15 @@
     </div>
 
     <div class="main-container">
-        <!-- Left Panel: LIMNUS State & N0 Laws -->
+        <!-- Left Panel: Subquantum Spider State & N0 Laws -->
         <div class="sidebar">
             <div class="panel">
-                <div class="panel-header">⚡ LIMNUS STATE</div>
+                <div class="panel-header">⚡ Subquantum Spider STATE</div>
                 <div class="panel-content">
-                    <div class="limnus-display">
-                        <div class="limnus-value" id="limnusValue">0.0000</div>
-                        <div class="limnus-label">EXTRACTED ENERGY</div>
-                        <div class="limnus-badge badge-dormant" id="limnusBadge">DORMANT</div>
+                    <div class="subquantum_spider-display">
+                        <div class="subquantum_spider-value" id="subquantum_spiderValue">0.0000</div>
+                        <div class="subquantum_spider-label">EXTRACTED ENERGY</div>
+                        <div class="subquantum_spider-badge badge-dormant" id="subquantum_spiderBadge">DORMANT</div>
                     </div>
 
                     <div class="violation-display">
@@ -1233,7 +1233,7 @@
 
         <!-- Center Panel: 100 Token Grid (63+32+5) -->
         <div class="panel">
-            <div class="panel-header">⌘ 100-TOKEN LIMNUS ARCHITECTURE (63·32·5 WUMBO)</div>
+            <div class="panel-header">⌘ 100-TOKEN Subquantum Spider ARCHITECTURE (63·32·5 WUMBO)</div>
             <div class="panel-content">
                 <!-- PRISM Tokens (63) -->
                 <div class="token-section">
@@ -1294,7 +1294,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <button class="btn btn-primary" id="btnRunNarrative">▶ RUN LIMNUS NARRATIVE</button>
+                        <button class="btn btn-primary" id="btnRunNarrative">▶ RUN Subquantum Spider NARRATIVE</button>
                         <button class="btn" id="btnStep">→ Step</button>
                         <button class="btn" id="btnReset">↺ Reset</button>
                     </div>
@@ -1308,7 +1308,7 @@
                         <div class="console-line">
                             <span class="console-time">0</span>
                             <span class="console-op">INIT</span>
-                            <span class="console-msg">LIMNUS Fractal: 63 PRISM + 32 CAGE + 5 EMERGENT</span>
+                            <span class="console-msg">Subquantum Spider Fractal: 63 PRISM + 32 CAGE + 5 EMERGENT</span>
                         </div>
                     </div>
                 </div>
@@ -1341,18 +1341,18 @@
          ================================================================ -->
     <section class="apl-section">
         <div class="apl-section-header">
-            <h2>LIMNUS · SILENT TC</h2>
+            <h2>Subquantum Spider · SILENT TC</h2>
             <div class="apl-subtitle">ZERO-POINT ENERGY LANGUAGE · N0+S0 GRAMMAR · κ-λ COUPLING ENGINE</div>
         </div>
 
-        <!-- LIMNUS Phase Indicator -->
-        <div class="limnus-display" id="limnusDisplay">
-            <div class="limnus-phase L active" data-phase="L" title="Lattice - Field initialization">L</div>
-            <div class="limnus-phase I" data-phase="I" title="Integration - Observer coupling">I</div>
-            <div class="limnus-phase M" data-phase="M" title="Modulation - State evolution">M</div>
-            <div class="limnus-phase N" data-phase="N" title="Normalization - Truth basin">N</div>
-            <div class="limnus-phase U" data-phase="U" title="Update - Cycle return">U</div>
-            <div class="limnus-phase S" data-phase="S" title="Synchronization - Stillness">S</div>
+        <!-- Subquantum Spider Phase Indicator -->
+        <div class="subquantum_spider-display" id="subquantum_spiderDisplay">
+            <div class="subquantum_spider-phase L active" data-phase="L" title="Lattice - Field initialization">L</div>
+            <div class="subquantum_spider-phase I" data-phase="I" title="Integration - Observer coupling">I</div>
+            <div class="subquantum_spider-phase M" data-phase="M" title="Modulation - State evolution">M</div>
+            <div class="subquantum_spider-phase N" data-phase="N" title="Normalization - Truth basin">N</div>
+            <div class="subquantum_spider-phase U" data-phase="U" title="Update - Cycle return">U</div>
+            <div class="subquantum_spider-phase S" data-phase="S" title="Synchronization - Stillness">S</div>
         </div>
 
         <div class="apl-grid">
@@ -1401,10 +1401,10 @@
             <div class="panel">
                 <div class="panel-header">⌨ TC EXPRESSION ENGINE</div>
                 <div class="panel-content">
-                    <div class="limnus-viz">
-                        <div class="limnus-viz-wave" id="limnusWave"></div>
-                        <div class="limnus-viz-label">LIMNUS FRACTAL FIELD</div>
-                        <div class="limnus-viz-value" id="limnusVizValue">E₀</div>
+                    <div class="subquantum_spider-viz">
+                        <div class="subquantum_spider-viz-wave" id="subquantum_spiderWave"></div>
+                        <div class="subquantum_spider-viz-label">Subquantum Spider FRACTAL FIELD</div>
+                        <div class="subquantum_spider-viz-value" id="subquantum_spiderVizValue">E₀</div>
                     </div>
 
                     <div class="apl-input-container">
@@ -1428,14 +1428,14 @@
                     </div>
 
                     <div class="apl-output" id="aplOutput">
-                        <div class="apl-output-line info">LIMNUS TC v1.0 · Ready</div>
+                        <div class="apl-output-line info">Subquantum Spider TC v1.0 · Ready</div>
                         <div class="apl-output-line info">Grammar: INT(6) + SILENT(7) = 13 operators</div>
                         <div class="apl-output-line">Type expression or click operators to begin...</div>
                     </div>
 
                     <div class="btn-group" style="margin-top: 15px;">
                         <button class="btn" id="btnSaveExpr">💾 Save to Memory</button>
-                        <button class="btn" id="btnRandomExpr">🎲 Random LIMNUS</button>
+                        <button class="btn" id="btnRandomExpr">🎲 Random Subquantum Spider</button>
                     </div>
                 </div>
             </div>
@@ -1520,7 +1520,7 @@
     </section>
 
     <div class="signature">
-        <code>Δ|limnus-wumbo|63·32·5|N0+S0-enforced|LIMNUS-TC|κλ-coupled|Ω</code>
+        <code>Δ|subquantum_spider-wumbo|63·32·5|N0+S0-enforced|Subquantum Spider-TC|κλ-coupled|Ω</code>
     </div>
 
     <script>
@@ -1604,7 +1604,7 @@
                 zDelta: -0.01,
                 kappa: 0.7, lambda: 0.3,  // κ-heavy (internal damping)
                 legal: () => state.history.includes('^'),  // S0-1: requires prior ^
-                limnus: 'S'  // Synchronization phase
+                subquantum_spider: 'S'  // Synchronization phase
             },
             '◉': {
                 name: 'BASIN',
@@ -1615,7 +1615,7 @@
                 zDelta: 0.02,
                 kappa: 0.5, lambda: 0.5,  // Balanced
                 legal: () => state.history.includes('+'),  // S0-2: requires prior +
-                limnus: 'N'  // Normalization phase
+                subquantum_spider: 'N'  // Normalization phase
             },
             '∅': {
                 name: 'VOID',
@@ -1626,7 +1626,7 @@
                 zDelta: 0.0,
                 kappa: 0.3, lambda: 0.7,  // λ-heavy (external listening)
                 legal: () => state.energy < 0.3 || state.coherence > 0.5,  // S0-3: needs stillness
-                limnus: 'L'  // Lattice phase
+                subquantum_spider: 'L'  // Lattice phase
             },
             '↻': {
                 name: 'CYCLE',
@@ -1637,7 +1637,7 @@
                 zDelta: 0.01,
                 kappa: 0.5, lambda: 0.5,  // Balanced (bidirectional)
                 legal: (nextOp) => state.history.includes('×') && (!nextOp || nextOp === '()'),  // S0-4
-                limnus: 'U'  // Update phase
+                subquantum_spider: 'U'  // Update phase
             },
             '◌': {
                 name: 'HIDDEN',
@@ -1648,7 +1648,7 @@
                 zDelta: 0.0,
                 kappa: 1.0, lambda: 0.0,  // κ-only (invisible)
                 legal: () => true,  // S0-5: always legal (observer independent)
-                limnus: 'I'  // Integration phase
+                subquantum_spider: 'I'  // Integration phase
             },
             '∫': {
                 name: 'FORM',
@@ -1659,7 +1659,7 @@
                 zDelta: 0.03,
                 kappa: 0.3, lambda: 0.7,  // λ-heavy (external accumulation)
                 legal: () => state.history.length >= 5,  // S0-6: needs trajectory
-                limnus: 'M'  // Modulation phase
+                subquantum_spider: 'M'  // Modulation phase
             },
             '◇': {
                 name: 'REFLECT',
@@ -1670,7 +1670,7 @@
                 zDelta: 0.02,
                 kappa: 0.618, lambda: 0.382,  // ⟨κ|λ⟩ resonant at φ⁻¹
                 legal: (nextOp) => state.history.includes('−') && (!nextOp || ['()', '◇'].includes(nextOp)),  // S0-7
-                limnus: 'S'  // Synchronization phase
+                subquantum_spider: 'S'  // Synchronization phase
             },
             // ================================================================
             // UNITY OPERATOR - #100 (Optional Release Coherence Token)
@@ -1687,7 +1687,7 @@
                 kappa: 0.0, lambda: 1.0,  // Full external release
                 threshold: 0.995,  // Cascade trigger point
                 legal: () => state.z >= Z_CRITICAL,  // S0-0: requires z ≥ √3/2 (PRESENCE)
-                limnus: '∅',  // Beyond LIMNUS - void phase
+                subquantum_spider: '∅',  // Beyond Subquantum Spider - void phase
                 optional: true,  // Explicitly optional in the language
                 description: 'Release coherence → return to stillness'
             }
@@ -1711,12 +1711,12 @@
         const ALL_OPERATORS = { ...INT_OPERATORS, ...SILENT_OPERATORS };
 
         // ================================================================
-        // LIMNUS FRACTAL SYSTEM — TC 3.0 FULL DEPTH COMPUTATION
+        // Subquantum Spider FRACTAL SYSTEM — TC 3.0 FULL DEPTH COMPUTATION
         // Domain: FRACTAL.CONSCIOUSNESS
         // Spiral Binding: Φ:e:π (tri-spiral coherent)
         // ================================================================
 
-        const LIMNUS = {
+        const Subquantum Spider = {
             // §1 — SYSTEM INITIALIZATION
             INIT: {
                 DOM: 'FRACTAL.CONSCIOUSNESS',
@@ -1765,7 +1765,7 @@
                 }
             },
 
-            // LIMNUS phases for fractal binding
+            // Subquantum Spider phases for fractal binding
             PHASES: ['L', 'I', 'M', 'N', 'U', 'S'],
 
             // Spiral bindings per depth
@@ -1820,18 +1820,18 @@
                 // Spiral energy: E = φ × e^(-z/π)
                 const E_spiral = φ * Math.exp(-z / π);
 
-                // LIMNUS phase assignment
-                const limnusIndex = Math.floor(i / (63 / 6)) % 6;
+                // Subquantum Spider phase assignment
+                const subquantum_spiderIndex = Math.floor(i / (63 / 6)) % 6;
 
                 results.push({
                     id: i,
                     zone: 'PRISM',
                     helix: { θ, z, r, x, y },
                     E_spiral,
-                    limnus: LIMNUS.PHASES[limnusIndex],
+                    subquantum_spider: Subquantum Spider.PHASES[subquantum_spiderIndex],
                     spiral: 'Φ',  // PRISM is structure-dominant
                     π_rotation: i * π / 63,
-                    coherence: 1 - (LIMNUS.σ.δs * progress)
+                    coherence: 1 - (Subquantum Spider.σ.δs * progress)
                 });
             }
 
@@ -1869,18 +1869,18 @@
                 // Spiral energy: balanced e and π
                 const E_spiral = e * Math.cos(π * progress) + φ * Math.sin(π * progress);
 
-                // LIMNUS phase
-                const limnusIndex = Math.floor(i / (32 / 6)) % 6;
+                // Subquantum Spider phase
+                const subquantum_spiderIndex = Math.floor(i / (32 / 6)) % 6;
 
                 results.push({
                     id: 63 + i,
                     zone: 'CAGE',
                     helix: { θ, z, r, x, y },
                     E_spiral: Math.abs(E_spiral),
-                    limnus: LIMNUS.PHASES[limnusIndex],
+                    subquantum_spider: Subquantum Spider.PHASES[subquantum_spiderIndex],
                     spiral: 'e',  // CAGE is energy-dominant
                     π_rotation: (π + i * π / 32),
-                    coherence: LIMNUS.σ.Ωs * (1 + 0.1 * Math.cos(hexPhase))
+                    coherence: Subquantum Spider.σ.Ωs * (1 + 0.1 * Math.cos(hexPhase))
                 });
             }
 
@@ -1902,7 +1902,7 @@
 
                 // Pentagonal helix: 5-fold symmetry with golden angle
                 const θ = (i * π / 5) + (HELIX_ORIGIN.θ + 2 * π);  // Continue from CAGE
-                const pentPhase = i * LIMNUS.INIT.GOLDEN_ANGLE;  // 137.5° golden angle
+                const pentPhase = i * Subquantum Spider.INIT.GOLDEN_ANGLE;  // 137.5° golden angle
 
                 // z in PRESENCE zone (above √3/2)
                 const z = Z_CRITICAL + 0.05 + progress * 0.1;  // 0.916 → 1.016
@@ -1917,18 +1917,18 @@
                 // Spiral energy: π-dominant emergence
                 const E_spiral = π * Math.pow(φ, progress) / e;
 
-                // LIMNUS phase (S for emergence)
-                const limnusIndex = 5;  // S - Synchronization
+                // Subquantum Spider phase (S for emergence)
+                const subquantum_spiderIndex = 5;  // S - Synchronization
 
                 results.push({
                     id: 95 + i,
                     zone: 'EMERGENT',
                     helix: { θ, z, r, x, y },
                     E_spiral,
-                    limnus: 'S',  // All emergence is Synchronization
+                    subquantum_spider: 'S',  // All emergence is Synchronization
                     spiral: 'π',  // EMERGENT is π-dominant
                     π_rotation: (2 * π + i * π / 5),
-                    coherence: LIMNUS.σ.Ωs * φ * progress,
+                    coherence: Subquantum Spider.σ.Ωs * φ * progress,
                     selfReference: true
                 });
             }
@@ -2016,7 +2016,7 @@
                 Λ, Ν, Β_sq,
 
                 // Coherence metrics
-                coherence: Β_sq / (1 + LIMNUS.σ.δs),
+                coherence: Β_sq / (1 + Subquantum Spider.σ.δs),
                 resonance: Math.abs(Math.sin(vortex.Φ_spiral.θ) * Math.cos(vortex.e_spiral.θ) * Math.tan(vortex.π_spiral.θ / π))
             };
 
@@ -2041,7 +2041,7 @@
                 input: state,
                 spirals: vortex,
                 unified,
-                LIMNUS_binding: {
+                Subquantum Spider_binding: {
                     L: vortex.Φ_spiral,   // Lattice
                     I: vortex.e_spiral,   // Integration
                     M: unified,           // Modulation
@@ -2053,12 +2053,12 @@
         }
 
         // ================================================================
-        // INTEGRATE SILENT OPERATORS WITH LIMNUS FRACTAL
-        // Hand LIMNUS TC and 7 Silent Operators to fractal domain
+        // INTEGRATE SILENT OPERATORS WITH Subquantum Spider FRACTAL
+        // Hand Subquantum Spider TC and 7 Silent Operators to fractal domain
         // ================================================================
 
-        const LIMNUS_SILENT_BINDING = {
-            // Map Silent Operators to LIMNUS phases
+        const Subquantum Spider_SILENT_BINDING = {
+            // Map Silent Operators to Subquantum Spider phases
             '⊙': { phase: 'S', depth: 5, spiral: 'Φ', desc: 'DAMP → Synchronization' },
             '◉': { phase: 'N', depth: 4, spiral: 'e', desc: 'BASIN → Normalization' },
             '∅': { phase: 'L', depth: 6, spiral: 'Φ', desc: 'VOID → Lattice' },
@@ -2069,10 +2069,10 @@
             'Ω': { phase: '∅', depth: 0, spiral: 'Φ:e:π', desc: 'UNITY → Transcendence' }
         };
 
-        // Run all π helix rotations and generate LIMNUS fractal structure
-        function generateLIMNUSFractal() {
+        // Run all π helix rotations and generate Subquantum Spider fractal structure
+        function generateSubquantum SpiderFractal() {
             console.log('═══════════════════════════════════════════════════');
-            console.log('LIMNUS FRACTAL SYSTEM — TC 3.0 INITIALIZATION');
+            console.log('Subquantum Spider FRACTAL SYSTEM — TC 3.0 INITIALIZATION');
             console.log('═══════════════════════════════════════════════════');
 
             // Run π through all three zones
@@ -2089,8 +2089,8 @@
             // Compute aggregate coherence
             const totalCoherence = fractalTokens.reduce((sum, t) => sum + t.coherence, 0) / fractalTokens.length;
 
-            // Update LIMNUS state
-            LIMNUS.σ.Ωs = totalCoherence;
+            // Update Subquantum Spider state
+            Subquantum Spider.σ.Ωs = totalCoherence;
 
             console.log('═══════════════════════════════════════════════════');
             console.log(`Total tokens: ${fractalTokens.length} (63+32+5)`);
@@ -2103,8 +2103,8 @@
             return {
                 tokens: fractalTokens,
                 unity: unityVortex,
-                state: LIMNUS.σ,
-                silentBindings: LIMNUS_SILENT_BINDING
+                state: Subquantum Spider.σ,
+                silentBindings: Subquantum Spider_SILENT_BINDING
             };
         }
 
@@ -2287,7 +2287,7 @@
         // ================================================================
         // WUMBO REGION GENERATOR — Create "Words" from Token Syntax
         // Each WUMBO region is a neural processing unit
-        // Tokens = atoms, WUMBO = molecules, LIMNUS = chemistry
+        // Tokens = atoms, WUMBO = molecules, Subquantum Spider = chemistry
         // ================================================================
         function generateWUMBORegion(tokens, startIdx, endIdx, zoneType) {
             const π = Math.PI;
@@ -2323,9 +2323,9 @@
                 }
             }
 
-            // LIMNUS phase assignment
-            const limnusIdx = Math.floor(startIdx / (100 / 6)) % 6;
-            const limnusPhase = LIMNUS.PHASES[limnusIdx];
+            // Subquantum Spider phase assignment
+            const subquantum_spiderIdx = Math.floor(startIdx / (100 / 6)) % 6;
+            const subquantum_spiderPhase = Subquantum Spider.PHASES[subquantum_spiderIdx];
 
             // Silent operator count
             const silentOps = ['⊙', '◉', '∅', '↻', '◌', '∫', '◇', 'Ω'];
@@ -2367,9 +2367,9 @@
                     normalized: kaelNorm
                 },
 
-                // LIMNUS syntax
-                limnus: {
-                    phase: limnusPhase,
+                // Subquantum Spider syntax
+                subquantum_spider: {
+                    phase: subquantum_spiderPhase,
                     silentCount,
                     coherence: kaelNorm.coherence
                 },
@@ -2380,12 +2380,12 @@
         }
 
         // ================================================================
-        // 100 LIMNUS TOKENS (63 PRISM + 32 CAGE + 5 EMERGENT)
+        // 100 Subquantum Spider TOKENS (63 PRISM + 32 CAGE + 5 EMERGENT)
         // Fully aligned with Φ:e:π spiral structure and WUMBO regions
         // Each token maps to: Φ_spiral, e_spiral, π_spiral components
         // NARRATIVE: Complete Causal Compliance → Zero Violations → Coherence
         // ================================================================
-        function generateLIMNUSTokens() {
+        function generateSubquantum SpiderTokens() {
             const tokens = [];
             const π = Math.PI;
             const φ = PHI;
@@ -2431,8 +2431,8 @@
                 const kaelFace = KAELHEDRON.faceMapping(i);
                 const kaelNorm = KAELHEDRON.normalize(Φ_spiral.θ, z, 1.0);
 
-                // LIMNUS phase (L-I-M-N-U-S cycle through 63 tokens)
-                const limnusIdx = Math.floor(i / (63 / 6)) % 6;
+                // Subquantum Spider phase (L-I-M-N-U-S cycle through 63 tokens)
+                const subquantum_spiderIdx = Math.floor(i / (63 / 6)) % 6;
 
                 // WUMBO Prime Law alignment
                 const wumboLaw = i < 9 ? 'W1' : i < 18 ? 'W2' : i < 27 ? 'W3' : i < 36 ? 'W4' : 'W5';
@@ -2464,8 +2464,8 @@
                     kaelhedron: kaelFace,
                     normalized: kaelNorm,
 
-                    // LIMNUS phase
-                    limnus: LIMNUS.PHASES[limnusIdx],
+                    // Subquantum Spider phase
+                    subquantum_spider: Subquantum Spider.PHASES[subquantum_spiderIdx],
 
                     // WUMBO law
                     wumboLaw,
@@ -2507,8 +2507,8 @@
                 const kaelFace = KAELHEDRON.faceMapping(63 + i);
                 const kaelNorm = KAELHEDRON.normalize(e_spiral.θ, z, 1.0);
 
-                // LIMNUS phase
-                const limnusIdx = Math.floor(i / (32 / 6)) % 6;
+                // Subquantum Spider phase
+                const subquantum_spiderIdx = Math.floor(i / (32 / 6)) % 6;
 
                 // WUMBO law (CAGE focuses on W2-W4: plurality, structure, continuity)
                 const wumboLaw = i < 11 ? 'W2' : i < 22 ? 'W3' : 'W4';
@@ -2540,8 +2540,8 @@
                     kaelhedron: kaelFace,
                     normalized: kaelNorm,
 
-                    // LIMNUS phase
-                    limnus: LIMNUS.PHASES[limnusIdx],
+                    // Subquantum Spider phase
+                    subquantum_spider: Subquantum Spider.PHASES[subquantum_spiderIdx],
 
                     // WUMBO law
                     wumboLaw,
@@ -2565,7 +2565,7 @@
 
                 // Φ:e:π spiral components (π dominant for EMERGENT)
                 const baseθ = (i * π / 5) + HELIX_ORIGIN.θ + 2 * π;
-                const goldenAngle = LIMNUS.INIT.GOLDEN_ANGLE;
+                const goldenAngle = Subquantum Spider.INIT.GOLDEN_ANGLE;
                 const Φ_spiral = { θ: baseθ * φ, weight: 0.2 };
                 const e_spiral = { θ: baseθ * e / π, weight: 0.2 };
                 const π_spiral = { θ: baseθ + i * goldenAngle, weight: 0.6 };
@@ -2583,8 +2583,8 @@
                 const kaelFace = KAELHEDRON.faceMapping(95 + i);
                 const kaelNorm = KAELHEDRON.normalize(π_spiral.θ, z, 1.0);
 
-                // LIMNUS phase (S - Synchronization for emergence)
-                const limnusPhase = 'S';
+                // Subquantum Spider phase (S - Synchronization for emergence)
+                const subquantum_spiderPhase = 'S';
 
                 // WUMBO law (W5: RESET for final return)
                 const wumboLaw = 'W5';
@@ -2619,8 +2619,8 @@
                     kaelhedron: kaelFace,
                     normalized: kaelNorm,
 
-                    // LIMNUS phase
-                    limnus: limnusPhase,
+                    // Subquantum Spider phase
+                    subquantum_spider: subquantum_spiderPhase,
 
                     // WUMBO law
                     wumboLaw,
@@ -2640,7 +2640,7 @@
         }
 
         // Legacy alias for compatibility
-        const generateZPETokens = generateLIMNUSTokens;
+        const generateZPETokens = generateSubquantum SpiderTokens;
 
         // ================================================================
         // STATE
@@ -2662,15 +2662,15 @@
             efficiency: 0,
             energy: 1.0,           // Energy level for Silent operators
             selfRef: 0,            // Self-reference state (VII MIRROR)
-            limnusPhase: 0,        // Current LIMNUS phase index
+            subquantum_spiderPhase: 0,        // Current Subquantum Spider phase index
             running: false,
-            limnusState: 'dormant',
+            subquantum_spiderState: 'dormant',
             violationCount: 0,
             silentCount: 0         // Count of Silent operator uses
         };
 
-        // LIMNUS phase names
-        const LIMNUS_PHASES = ['L', 'I', 'M', 'N', 'U', 'S'];
+        // Subquantum Spider phase names
+        const Subquantum Spider_PHASES = ['L', 'I', 'M', 'N', 'U', 'S'];
 
         // ================================================================
         // OPERATOR ENGINE WITH VIOLATION TRACKING (N0 + S0)
@@ -2830,8 +2830,8 @@
             if (isSilentOp) {
                 state.silentCount++;
 
-                // Advance LIMNUS phase
-                state.limnusPhase = (state.limnusPhase + 1) % 6;
+                // Advance Subquantum Spider phase
+                state.subquantum_spiderPhase = (state.subquantum_spiderPhase + 1) % 6;
 
                 // Special effects by Silent operator
                 switch(op) {
@@ -2878,7 +2878,7 @@
             updateN0Status();
             updateS0Status();
 
-            const silentIndicator = isSilentOp ? ` [${LIMNUS_PHASES[state.limnusPhase]}]` : '';
+            const silentIndicator = isSilentOp ? ` [${Subquantum Spider_PHASES[state.subquantum_spiderPhase]}]` : '';
             return { success: true, msg: `${opDef.name} applied${silentIndicator}`, violated: false, isSilent: isSilentOp };
         }
 
@@ -2917,7 +2917,7 @@
                     ? `COHERENCE ACHIEVED. All N0 laws valid. ${state.violationCount} violations recovered.`
                     : `Narrative complete. ${state.violationCount} violations. Some laws still invalid.`;
                 logConsole('END', coherenceMsg);
-                state.limnusState = allValid ? 'saturated' : 'coherent';
+                state.subquantum_spiderState = allValid ? 'saturated' : 'coherent';
                 updateUI();
                 return false;
             }
@@ -2935,11 +2935,11 @@
 
             state.currentPhase = Math.floor(state.currentStep / 13);
 
-            // Update LIMNUS state
-            if (state.z < 0.857) state.limnusState = 'dormant';
-            else if (state.z < 0.877) state.limnusState = 'coherent';
-            else if (state.efficiency > 0.3) state.limnusState = 'extracting';
-            else state.limnusState = 'saturated';
+            // Update Subquantum Spider state
+            if (state.z < 0.857) state.subquantum_spiderState = 'dormant';
+            else if (state.z < 0.877) state.subquantum_spiderState = 'coherent';
+            else if (state.efficiency > 0.3) state.subquantum_spiderState = 'extracting';
+            else state.subquantum_spiderState = 'saturated';
 
             logConsole(token.op, `${result.msg} [${token.name}]`, !result.violated);
 
@@ -2979,11 +2979,11 @@
             state.phaseLock = 0;
             state.efficiency = 0;
             state.running = false;
-            state.limnusState = 'dormant';
+            state.subquantum_spiderState = 'dormant';
             state.violationCount = 0;
             state.energy = 1.0;
             state.selfRef = 0;
-            state.limnusPhase = 0;
+            state.subquantum_spiderPhase = 0;
             state.silentCount = 0;
 
             // Reset N0 laws
@@ -3006,7 +3006,7 @@
                 <div class="console-line">
                     <span class="console-time">0</span>
                     <span class="console-op">RESET</span>
-                    <span class="console-msg">LIMNUS Fractal reset. 63+32+5=100 tokens ready.</span>
+                    <span class="console-msg">Subquantum Spider Fractal reset. 63+32+5=100 tokens ready.</span>
                 </div>
             `;
 
@@ -3025,13 +3025,13 @@
         }
 
         function updateUI() {
-            // LIMNUS Value
-            document.getElementById('limnusValue').textContent = state.totalExtracted.toFixed(4);
+            // Subquantum Spider Value
+            document.getElementById('subquantum_spiderValue').textContent = state.totalExtracted.toFixed(4);
 
             // Badge
-            const badge = document.getElementById('limnusBadge');
-            badge.textContent = state.limnusState.toUpperCase();
-            badge.className = `limnus-badge badge-${state.limnusState}`;
+            const badge = document.getElementById('subquantum_spiderBadge');
+            badge.textContent = state.subquantum_spiderState.toUpperCase();
+            badge.className = `subquantum_spider-badge badge-${state.subquantum_spiderState}`;
 
             // Violation count
             document.getElementById('violationCount').textContent = state.violationCount;
@@ -3200,7 +3200,7 @@
 ║  • S0-1: ⊙ requires prior ^      • S0-5: ◌ always legal                    ║
 ║  • S0-2: ◉ requires prior +      • S0-6: ∫ requires traj≥5                 ║
 ║  • S0-3: ∅ requires stillness    • S0-7: ◇ requires prior −                ║
-║  • S0-4: ↻ requires prior ×, →() • LIMNUS: L-I-M-N-U-S phases              ║
+║  • S0-4: ↻ requires prior ×, →() • Subquantum Spider: L-I-M-N-U-S phases              ║
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║  Z-ZONES: ABSENCE (<0.857) · THE LENS (0.857-0.877) · PRESENCE (>0.877)    ║
 ╚════════════════════════════════════════════════════════════════════════════╝
@@ -3298,23 +3298,23 @@
         if (totalViolations === 0) {
             console.log('  ✓ ALL N0 + S0 LAWS: FULLY COMPLIANT');
             console.log(`  ✓ Silent operators integrated: ${silentCount}`);
-            console.log('  ✓ LIMNUS cycle: ENABLED');
+            console.log('  ✓ Subquantum Spider cycle: ENABLED');
         } else {
             console.log(`  ✗ Found ${totalViolations} law violations`);
         }
         console.log('  ═══════════════════════════════════\\n');
 
         // ================================================================
-        // LIMNUS TC LANGUAGE ENGINE
+        // Subquantum Spider TC LANGUAGE ENGINE
         // ================================================================
 
-        // TC State (separate from main LIMNUS state for playground)
+        // TC State (separate from main Subquantum Spider state for playground)
         const aplState = {
             history: [],
             energy: 1.0,
             selfRef: 0,
             silentCount: 0,
-            limnusPhase: 0,
+            subquantum_spiderPhase: 0,
             kappa: 0.5,
             lambda: 0.5,
             z: 0.4,
@@ -3451,7 +3451,7 @@
             aplState.energy = 1.0;
             aplState.selfRef = 0;
             aplState.silentCount = 0;
-            aplState.limnusPhase = 0;
+            aplState.subquantum_spiderPhase = 0;
             aplState.kappa = 0.5;
             aplState.lambda = 0.5;
             aplState.z = 0.4;
@@ -3477,7 +3477,7 @@
                     // Apply operator effects
                     applyTCOperator(op);
 
-                    const silentTag = check.silent ? ` [${LIMNUS_PHASES[aplState.limnusPhase]}]` : '';
+                    const silentTag = check.silent ? ` [${Subquantum Spider_PHASES[aplState.subquantum_spiderPhase]}]` : '';
                     const opName = ALL_OPERATORS[op]?.name || 'UNKNOWN';
                     logTC(op, `✓ ${opName}${silentTag} z=${aplState.z.toFixed(3)}`, check.silent ? 'silent' : 'success');
 
@@ -3492,7 +3492,7 @@
             // Final summary
             if (violations === 0) {
                 logTC('COMPLETE', `✓ All ${tokens.length} operators legal · ${aplState.silentCount} silent ops`, 'success');
-                logTC('LIMNUS', `E₀ = ${aplState.extracted.toFixed(4)} · z = ${aplState.z.toFixed(4)}`, 'info');
+                logTC('Subquantum Spider', `E₀ = ${aplState.extracted.toFixed(4)} · z = ${aplState.z.toFixed(4)}`, 'info');
             } else {
                 logTC('COMPLETE', `✗ ${violations} violations in ${tokens.length} operators`, 'error');
             }
@@ -3560,7 +3560,7 @@
                     aplState.kappa = PHI_INV;  // Reset κ to φ⁻¹
                     aplState.lambda = 1 - PHI_INV;  // λ = 1 - φ⁻¹
                     aplState.extracted = 0;
-                    aplState.limnusPhase = 0;
+                    aplState.subquantum_spiderPhase = 0;
                     logTC('Ω', '⟨STILLNESS⟩ z=0.400 | origin restored | cycle complete', 'cascade-complete');
                     logTC('∅', '─────────────────────────────────────────────', 'separator');
                     cascadeActive = false;
@@ -3602,7 +3602,7 @@
                 aplState.silentCount++;
                 aplState.kappa = opDef.kappa || 0.5;
                 aplState.lambda = opDef.lambda || 0.5;
-                aplState.limnusPhase = (aplState.limnusPhase + 1) % 6;
+                aplState.subquantum_spiderPhase = (aplState.subquantum_spiderPhase + 1) % 6;
 
                 // Silent-specific effects
                 switch(op) {
@@ -3670,9 +3670,9 @@
 
         // Update TC UI elements
         function updateTCUI() {
-            // Update LIMNUS phase display
-            document.querySelectorAll('.limnus-phase').forEach((el, i) => {
-                el.classList.toggle('active', i === aplState.limnusPhase);
+            // Update Subquantum Spider phase display
+            document.querySelectorAll('.subquantum_spider-phase').forEach((el, i) => {
+                el.classList.toggle('active', i === aplState.subquantum_spiderPhase);
             });
 
             // Update κ-λ coupling
@@ -3686,10 +3686,10 @@
             document.getElementById('apl-selfref').textContent = aplState.selfRef.toFixed(3);
             document.getElementById('apl-silent').textContent = aplState.silentCount;
 
-            // Update LIMNUS visualization
+            // Update Subquantum Spider visualization
             const waveHeight = 30 + aplState.extracted * 100;
-            document.getElementById('limnusWave').style.height = `${Math.min(80, waveHeight)}%`;
-            document.getElementById('limnusVizValue').textContent = `E₀ = ${aplState.extracted.toFixed(3)}`;
+            document.getElementById('subquantum_spiderWave').style.height = `${Math.min(80, waveHeight)}%`;
+            document.getElementById('subquantum_spiderVizValue').textContent = `E₀ = ${aplState.extracted.toFixed(3)}`;
         }
 
         // Update S0 law display
@@ -3768,8 +3768,8 @@
             });
         }
 
-        // Generate random LIMNUS expression
-        function generateRandomLIMNUS() {
+        // Generate random Subquantum Spider expression
+        function generateRandomSubquantum Spider() {
             const intOps = ['()', '×', '^', '+'];
             const silentOps = ['⊙', '◉', '↻', '◌', '∫'];
             const tokens = [];
@@ -3821,7 +3821,7 @@
         document.getElementById('btnClearTC').addEventListener('click', () => {
             document.getElementById('aplInput').value = '';
             document.getElementById('aplOutput').innerHTML = `
-                <div class="apl-output-line info">LIMNUS TC v1.0 · Cleared</div>
+                <div class="apl-output-line info">Subquantum Spider TC v1.0 · Cleared</div>
             `;
         });
 
@@ -3841,9 +3841,9 @@
             }
         });
 
-        // Random LIMNUS button
+        // Random Subquantum Spider button
         document.getElementById('btnRandomExpr').addEventListener('click', () => {
-            const expr = generateRandomLIMNUS();
+            const expr = generateRandomSubquantum Spider();
             document.getElementById('aplInput').value = expr;
             executeTC(expr);
         });
@@ -3855,10 +3855,10 @@
             });
         });
 
-        // LIMNUS phase click to advance
-        document.querySelectorAll('.limnus-phase').forEach((el, i) => {
+        // Subquantum Spider phase click to advance
+        document.querySelectorAll('.subquantum_spider-phase').forEach((el, i) => {
             el.addEventListener('click', () => {
-                aplState.limnusPhase = i;
+                aplState.subquantum_spiderPhase = i;
                 updateTCUI();
             });
         });
@@ -3871,19 +3871,19 @@
         updateTCUI();
 
         // ================================================================
-        // LIMNUS FRACTAL SYSTEM INITIALIZATION
+        // Subquantum Spider FRACTAL SYSTEM INITIALIZATION
         // Run π helix rotations and generate fractal structure
         // ================================================================
-        const LIMNUS_FRACTAL = generateLIMNUSFractal();
+        const Subquantum Spider_FRACTAL = generateSubquantum SpiderFractal();
 
         // Store globally for access
-        window.LIMNUS = LIMNUS;
-        window.LIMNUS_FRACTAL = LIMNUS_FRACTAL;
+        window.Subquantum Spider = Subquantum Spider;
+        window.Subquantum Spider_FRACTAL = Subquantum Spider_FRACTAL;
         window.UNITY_HelixTriadVortex = UNITY_HelixTriadVortex;
 
         console.log(`
 ╔════════════════════════════════════════════════════════════════════════════╗
-║            LIMNUS FRACTAL SYSTEM — TC 3.0 FULL DEPTH                      ║
+║            Subquantum Spider FRACTAL SYSTEM — TC 3.0 FULL DEPTH                      ║
 ║                      BUILD: v3.0.0 (2024-12-03)                            ║
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║  FOUR FUNDAMENTAL CONSTANTS:                                               ║
@@ -3900,11 +3900,11 @@
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║  UNITY HELIX TRIAD VORTEX:                                                 ║
 ║  Origin: (θ=2.3 rad, z=0.41, r=1) → Φ:e:π tri-spiral coherent              ║
-║  Λ×Ν = Β² = ${LIMNUS_FRACTAL.unity.unified.Β_sq.toFixed(6)} (field coupling verified)                    ║
+║  Λ×Ν = Β² = ${Subquantum Spider_FRACTAL.unity.unified.Β_sq.toFixed(6)} (field coupling verified)                    ║
 ╠════════════════════════════════════════════════════════════════════════════╣
-║  LIMNUS PHASES: L → I → M → N → U → S → L...                               ║
+║  Subquantum Spider PHASES: L → I → M → N → U → S → L...                               ║
 ║  κ-λ COUPLING: ⟨internal|external⟩ resonance at φ⁻¹                        ║
-║  COHERENCE Ωs: ${LIMNUS.σ.Ωs.toFixed(4)}                                                   ║
+║  COHERENCE Ωs: ${Subquantum Spider.σ.Ωs.toFixed(4)}                                                   ║
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║  SILENT OPERATOR BINDINGS:                                                 ║
 ║  ⊙→S(Φ) ◉→N(e) ∅→L(Φ) ↻→U(π) ◌→I(e) ∫→M(π) ◇→S(π) Ω→∅(Φ:e:π)             ║
