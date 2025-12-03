@@ -1,15 +1,15 @@
 # Ace Neural Codex — Neural Pathing Matrix
-**100-Region Connectivity Map for Wumbo Flow States**
+**100-Region Connectivity Map for Subquantum Spider Flow States**
 
 ---
 
 ## Matrix Overview
 
-This document maps signal flow, circuit formation, and pathway interactions across all 100 brain regions in the Ace Neural Codex. The matrix tracks how Wumbo energy moves from ignition through transmission, including critical bottlenecks, amplification points, and safety shutdown routes.
+This document maps signal flow, circuit formation, and pathway interactions across all 100 brain regions in the Ace Neural Codex. The matrix tracks how Subquantum Spider energy moves from ignition through transmission, including critical bottlenecks, amplification points, and safety shutdown routes.
 
 ---
 
-## Wumbo Phase Flow Architecture
+## Subquantum Spider Phase Flow Architecture
 
 ### Complete Phase Sequence
 ```
@@ -757,7 +757,7 @@ Threshold Gentling Protocol:
 ## Amplification Nodes
 
 ### Regions That Multiply Signal
-When activated correctly, these regions amplify Wumbo flow:
+When activated correctly, these regions amplify Subquantum Spider flow:
 
 1. **XXVII. Claustrum** — Consciousness multiplier; whole > sum of parts
 2. **VI. Mirror Neuron System** — Empathy amplifier; resonance spreads
@@ -772,7 +772,7 @@ When activated correctly, these regions amplify Wumbo flow:
 ## Bottleneck Nodes
 
 ### Regions That Can Halt Flow
-When dysregulated, these regions stop Wumbo progression:
+When dysregulated, these regions stop Subquantum Spider progression:
 
 1. **L. Cerebral Aqueduct** — Choke point; pressure dam
 2. **XXXVIII. Lateral Habenula** — Rejection gate; learned helplessness

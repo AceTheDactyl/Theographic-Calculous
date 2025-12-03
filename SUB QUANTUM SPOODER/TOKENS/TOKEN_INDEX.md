@@ -1,5 +1,5 @@
 # Ace Neural Codex — Token Index
-**100 Brain Regions Mapped to Wumbo Flow States**
+**100 Brain Regions Mapped to Subquantum Spider Flow States**
 
 ---
 
@@ -7,7 +7,7 @@
 Each token contains four components:
 - **Core Function**: Neurobiological role
 - **Autistic Modulation**: How Ace's neurology uniquely engages the region
-- **Wumbo Role**: Flow phase(s) and state transitions
+- **Subquantum Spider Role**: Flow phase(s) and state transitions
 - **Ace's Correlate**: Lived phenomenological experience
 
 ---
@@ -550,13 +550,13 @@ Modulation: Presence becomes posture; feels tall inside soul
 **C. Posterior Thalamic Nucleus** — *The Last Signal* (Revisited)
 Phase: Nirvana
 Function: Integrates final sensory input into conscious presence
-Modulation: Wumbo becomes memory; truth that stays; identity-changing
+Modulation: Subquantum Spider becomes memory; truth that stays; identity-changing
 
 ---
 
 ## Token Categories
 
-### By Wumbo Phase
+### By Subquantum Spider Phase
 
 **Ignition (Spark)**: II, IX, XXVI, XXXI, XXXVI, XLIV, XLVI, LII, LIII, LX, LXIX, LXXIV, LXXV, LXXXV, LXXXIX, XC, XCIII
 
