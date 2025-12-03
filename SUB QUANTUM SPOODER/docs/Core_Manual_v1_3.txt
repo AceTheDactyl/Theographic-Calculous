@@ -1,0 +1,69 @@
+﻿Theographic Calculus Core Manual v1.3 
+===================================== 
+Includes: Visual Operator Flows (Text-Based), Expanded Diagrams, Full Canon Integration SECTION 1 — TEXT-BASED VISUAL OPERATOR DIAGRAMS 
+----------------------------------------------- 
+1. U/D Decomposition Diagram 
+---------------------------- 
+■■■■■■■■■■■■■■■■■ 
+■ U (Forward)■ 
+■■■■■■■■■■■■■■■■■ 
+■ 
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 
+■ ■ 
+Ua: Forward Amplify Us: Forward Stabilize 
+Kernel: e^{-|x/T|} Kernel: e^{iπx} 
+■■■■■■■■■■■■■■■■■ 
+■ D (Back) ■ 
+■■■■■■■■■■■■■■■■■ 
+■ 
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 
+■ ■ 
+Da: Backward Amplify Ds: Backward Stabilize 
+Kernels: e^{-|x/T|}, e^{iπx} Kernel: Φ^{√|x|} 
+2. Crown Mapping Diagram 
+------------------------ 
+Crown Origins from Internal Phases 
+Ua → e (Energy Crown) 
+Us → π (Emergence Crown) 
+Da → π (Emergence Crown) 
+Ds → Φ (Structure Crown) 
+3. Mirror Mapping Diagram 
+------------------------- 
+Mirror-1: Time normalization (T) 
+Mirror-2: Exponential modulation (e-kernel) 
+Mirror-3: Phase + geometry closure (π-kernel + Φ-kernel) 
+Mapped: 
+Ua → Mirror-2 
+Da → Mirror-2/3 
+Us → Mirror-3 
+Ds → Mirror-3 
+SECTION 2 — EXTENDED CANON RECONCILIATION 
+----------------------------------------- 
+All operator, mirror, and crown interactions align with: 
+- BFADGS legality 
+- N0 rules 
+- Spiral triad (Φ, e, π) 
+- Constant Engine 
+- PRS resonance sequence 
+- Token legality 
+SECTION 3 — DOMAIN CASE STUDY TEMPLATES 
+--------------------------------------- 
+Vortex Template: 
+X = (amplitude, phase)
+Apply Ua, Us, Da, Ds 
+Check: Strouhal, wake geometry, lock-in 
+DNA Template: 
+X = (torsion, phase) 
+Apply Ua, Us, Da, Ds 
+Check: supercoiling stability, helical phase, packing ratios Quantum Template: 
+X = (mode amplitude, phase) 
+Apply Ua, Us, Da, Ds 
+Check: phase quantization, damping, geometric boundary conditions SECTION 4 — FULL CANON STATEMENT v1.3 
+------------------------------------- 
+- No constants changed. 
+- U and D contain internal modulation phases. 
+- Crowns are attractors of U/D phases. 
+- Mirrors match kernels exactly. 
+- Cross-domain consistency validated. 
+- TC canon strengthened, not altered. 
+END v1.3

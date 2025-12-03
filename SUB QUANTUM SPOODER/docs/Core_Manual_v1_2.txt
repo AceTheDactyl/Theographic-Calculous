@@ -1,0 +1,102 @@
+﻿Theographic Calculus Core Manual v1.2 
+===================================== 
+FULL EXPANSION WITH INTERNAL U/D PHASES, CROWN GENERATORS, MIRROR STRUCTURE, AND CROSS-DOMAIN CONTEXT 
+INTRODUCTION 
+------------ 
+Version 1.2 expands the operator architecture, clarifies the internal A/S phases, and integrates structural tests from vortex dynamics, DNA supercoiling, and quantum recursion. This version preserves full canonical integrity of v1.0 and v1.1. 
+SECTION 1 — DIRECTION OPERATORS (UPDATED CANON) 
+------------------------------------------------ 
+U and D remain the only two direction operators. The discovery in November–December 2025 clarified that each contains two internal phases: 
+U = Ua → Us 
+D = Da → Ds 
+Ua (Forward Amplify): 
+- Applies exponential modulation e^{-|x/T|} 
+- Controls expansion while imposing time-based damping 
+- Related to Mirror-2 energetic behavior 
+Us (Forward Stabilize): 
+- Applies phase closure e^{iπx} 
+- Enforces periodicity, standing waves, and oscillatory closure 
+- Related to Mirror-3 phase behavior 
+Da (Backward Amplify): 
+- Applies exponential modulation AND phase feedback 
+- Governs backward resonance integration 
+- Also linked to Mirror-2 dynamics 
+Ds (Backward Stabilize): 
+- Applies geometric attractor kernel Φ^{√|x|} 
+- Enforces structural convergence, crystalline form 
+- Related to Mirror-3’s geometric component 
+SECTION 2 — CROWN GENERATORS (MICROSCOPIC FUNCTIONS) 
+---------------------------------------------------- 
+The old Three Crown formulas remain canon but now represent local generator functions: GΦ(x) = Φ^{√|x|} 
+- Structure generator for Ds 
+- Governs geometric lock and form stabilization 
+Ge(x) = e^{-|x/T|} 
+- Time-scaled exponential attenuation 
+- Used in Ua and Da as dynamic regulator 
+Gπ(x) = e^{iπx} 
+- Complex unit rotation 
+- Sets the oscillatory closure for Us and Da 
+SECTION 3 — MIRROR STRUCTURE (FULLY INTEGRATED) 
+------------------------------------------------ 
+Mirror-3 contains both geometric and phase-lock components. 
+The new alignment is: 
+Mirror-3 = (Ds ∧ Us) acting through (GΦ ■ Gπ) 
+Mirror-2 = amplification/damping and resonance modulation (Ua, Da) 
+Mirror-1 = T-normalization, time anchoring 
+Thus: 
+- Internal U-phases align with Mirror-1 and Mirror-3 
+- Internal D-phases align with Mirror-2 and Mirror-3
+SECTION 4 — PRS RESONANCE AND RECURRENCE 
+----------------------------------------- 
+The PRS (Paradox Resolution Sequence) remains fully valid. 
+PRS phases align cleanly with the new decomposition: 
+- Initiation ~ Ua 
+- Feedback ~ Da 
+- Coherence Inflection ~ Us 
+- Resonance Lock ~ Ds 
+- Emergence ~ Crown invariants 
+SECTION 5 — CROSS-DOMAIN VALIDATION (NO COMPRESSION) 
+----------------------------------------------------- 
+Vortex Dynamics: 
+- e-kernel describes wake growth regulation 
+- π-kernel describes shedding periodicity (Strouhal behavior) 
+- Φ-kernel describes vortex street geometry 
+- Lock-in observed as CLT state 
+DNA Supercoiling: 
+- e-kernel describes torsional attenuation and relaxation 
+- π-kernel describes discrete helical phase states (10.5 bp/turn) 
+- Φ-kernel describes hierarchical packing, superhelix geometry 
+- Stable superhelical density corresponds to CLT 
+Quantum Harmonic/Box: 
+- π-kernel sets quantized mode closure 
+- e-kernel models effective damping or phase diffusion under coarse-graining - Φ-kernel emerges in geometric/topological constraints of modes 
+- Fixed eigenstates correspond to CLT conditions 
+SECTION 6 — CLT (COHERENCE LOCK THRESHOLD) 
+------------------------------------------- 
+CLT is the point where amplification yields to stabilization: 
+|Amplification(x)| ≤ |Stabilization(x)| 
+Under CLT: 
+- Ua → Us transitions into stable periodic regimes 
+- Da → Ds transitions into structural lock 
+- Crown invariants (Φ, e, π) express through U and D attractors 
+SECTION 7 — CONSTANT COHERENCE AND TC SAFETY 
+--------------------------------------------- 
+No new constants were introduced. T, Φ, e, π, S_C, and all existing constants remain stable. Internal U/D phases do not affect token legality. No violation of N0 laws or BFADGS. SECTION 8 — CANONICAL STRUCTURE AND NON-MUTABILITY 
+--------------------------------------------------- 
+This update preserves all previous manuals: 
+- Core Manual v1.0 
+- Token Manual v1.0 
+- Token Manual Part I & II 
+- Crown Codex 
+- Mirror Codex 
+Only clarifications and expansions were added: 
+- Internal U/D phase architecture 
+- Crown generator roles 
+- Mirror relations 
+- Domain-specific mappings 
+SECTION 9 — SUMMARY OF CHANGES 
+-------------------------------
+- Added internal phase structure Ua, Us, Da, Ds - Clarified Crown generator functions 
+- Re-mapped Mirror interactions precisely 
+- Validated engine across vortex/DNA/quantum - Integrated CLT with phase transitions 
+- Preserved original TC constants and canonical structure END OF MANUAL v1.2

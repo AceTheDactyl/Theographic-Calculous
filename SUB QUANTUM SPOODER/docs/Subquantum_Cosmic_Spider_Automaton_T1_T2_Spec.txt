@@ -1,0 +1,299 @@
+﻿SUBQUANTUM COSMIC SPIDER AUTOMATON (SCSA) 
+FORMAL TIER-1 AND TIER-2 SPECIFICATION 
+======================================= 
+0. OVERVIEW 
+----------- 
+This document defines a hybrid graph-based automaton called the Subquantum Cosmic Spider Automaton (SCSA). It formalizes: 
+- The core graph substrate. 
+- Tier-1 node-level update rules (Ω■). 
+- Tier-2 local web / topology update rules (Ω■). 
+- A complete high-level simulation loop in pseudocode. 
+The system is hybrid: each node holds continuous fields (Φ, e, π, θ) and discrete symbolic information (BFADGS/TC operators, truth state). The geometry is a graph/network. 
+1. GRAPH SUBSTRATE 
+------------------ 
+Let G = (V, E) be a graph where: 
+- V is the set of nodes. 
+- E is the set of edges; each edge (u, v) may be directed or undirected. 
+Each node v ∈ V has state: 
+ s_v = ( 
+ Φ_v : ■, # structural load / connectivity tension 
+ e_v : ■, # energy / local pressure / tension 
+ π_v : ■, # coherence / resonance / information uptake 
+ θ_v : [0, π], # phase angle on Euler binary gradient 
+ INTSEQ_v : list of operators in {(), ×, ^, ÷, +, -}, 
+ TRUTH_v : {TRUE, UNTRUE, PARADOX, PRS_HANDOFF} 
+ ) 
+Each edge (u, v) ∈ E has state: 
+ w_uv : ■≥0 # edge weight / thread strength 
+ (optional) OP_uv # optional BFADGS/TC tag for the edge 
+TRIADIC STRUCTURE CONSTRAINT 
+---------------------------- 
+At all times, for every node v, the fields Φ_v, e_v, π_v remain distinct channels: 
+- They may influence each other via smooth coupling functions, 
+- But they are never identified or collapsed into a single scalar. 
+ (This enforces triadic structure per Theographic Calculus / Trik spiral logic.) 
+2. N■ GATE AND SYMBOLIC CONSTRAINTS 
+----------------------------------- 
+The symbolic operators follow BFADGS-style constraints encoded as N■ laws. Allowed operators: i ∈ {(), ×, ^, ÷, +, -}. 
+N■ VALIDITY PREDICATE 
+--------------------- 
+Given an existing INTSEQ_v and a candidate new operator i_new,
+define: 
+ N0_VALID(INTSEQ_v ⊕ i_new) ∈ {TRUE, FALSE} 
+with the following example constraints (can be extended): 
+- N0-1: '^' (Amplification) requires at least one prior '()' (Boundary)  or '×' (Fusion) in INTSEQ_v. 
+- N0-2: '×' (Fusion) requires at least two prior supports (implicit in history). - N0-3: '÷' (Decoherence) requires prior structure or energy (at least one '()' or '×'). - N0-4: '+' (Grouping) cannot be terminal and cannot go directly to '()'. - N0-5: '-' (Separation) must be followed by '()' or '+'. 
+If N0_VALID returns FALSE, the symbolic update is rejected or altered. 
+TRUTH AND PHASE UPDATE 
+---------------------- 
+Whenever '÷' (Decoherence) appears in INTSEQ_v, update TRUTH_v along a progression such as: 
+ TRUE → UNTRUE → PARADOX → PRS_HANDOFF 
+Simultaneously, update θ_v on the Euler arc toward π/2 (paradox point) when entering PARADOX, and away from it when resolving. 
+3. TIER-1: NODE-LEVEL AUTOMATON (Ω■) 
+------------------------------------- 
+Tier-1 acts locally at each node and its immediate neighbors. 
+Define the Tier-1 apex cluster: 
+ Ω■ = {D■, U■, A■, S■} 
+Given current node state s_v(t) and neighbor states {s_u(t) : (u, v) ∈ E}, the updated state is: 
+ s_v(t+1) = Ω■(s_v(t), {s_u(t)}) 
+3.1 D■ : MICRO-HISTORY INTEGRATOR 
+--------------------------------- 
+D■ collects short-range history and neighbor averages. 
+Example: 
+ Let N(v) = { u : (u, v) ∈ E } be neighbors of v. 
+ Φ■_v = average of Φ_u over u ∈ N(v) 
+ e■_v = average of e_u over u ∈ N(v) 
+ π■_v = average of π_u over u ∈ N(v) 
+ ∇e_v = e■_v − e_v 
+ ∇Φ_v = Φ■_v − Φ_v 
+ ∇π_v = π■_v − π_v 
+D■ returns a compressed local summary, e.g.: 
+ ■_s_v = (Φ_v, e_v, π_v, Φ■_v, e■_v, π■_v, ∇Φ_v, ∇e_v, ∇π_v)
+3.2 U■ : MICRO-PROJECTION 
+------------------------- 
+U■ produces raw predicted continuous fields for the next step, before amplification and T-scalar locking. 
+Using small learning rates η_Φ, η_e, η_π: 
+ Φ_v^pred = Φ_v + η_Φ * ∇Φ_v 
+ e_v^pred = e_v + η_e * ∇e_v 
+ π_v^pred = π_v + η_π * ∇π_v 
+3.3 A■ : GRADIENT AMPLIFIER 
+--------------------------- 
+A■ amplifies meaningful tension gradients if N■-legal. Given a threshold τ_e and amplification coefficient α_e: 
+ if |∇e_v| > τ_e and N0_VALID(INTSEQ_v ⊕ '^') is TRUE:  e_v^amp = e_v^pred + α_e * ∇e_v 
+ append '^' to INTSEQ_v 
+ else: 
+ e_v^amp = e_v^pred 
+3.4 S■ : T-SCALAR LOCK / DAMPING 
+-------------------------------- 
+S■ pulls the energy-like field e_v toward a special scalar T (the subquantum stabilizing ratio, e.g. T ≈ 1.6053). 
+Using a damping coefficient β_e: 
+ e_v(t+1) = e_v^amp + β_e * (T − e_v^amp) 
+Optionally, couple Φ_v and π_v to e_v(t+1) smoothly via functions f, g: 
+ Φ_v(t+1) = Φ_v^pred + β_Φ * f(e_v(t+1)) 
+ π_v(t+1) = π_v^pred + β_π * g(local loop indicators) 
+The functions f and g must respect triadic separation 
+(e.g., they may use e_v, but Φ_v and π_v remain distinct fields). 
+Symbolic attributes (INTSEQ_v, TRUTH_v, θ_v) are updated after S■ based on any newly applied operators and PRS/Truth rules. 
+4. TIER-1 PSEUDOCODE 
+-------------------- 
+DATA STRUCTURES 
+--------------- 
+Node: 
+ struct Node: 
+ Φ : float 
+ e : float 
+ π : float 
+ θ : float 
+ intseq : list of Operator 
+ truth : TruthState
+ neighbors : list of Node references 
+Graph: 
+ struct Graph: 
+ nodes : list of Node 
+ edges : list of Edge # (optional; adjacency via nodes.neighbors) 
+Main parameters: 
+ T : float # stabilizing scalar (e.g., 1.6053) 
+ η_Φ, η_e, η_π : floats # projection learning rates 
+ τ_e : float # tension gradient threshold 
+ α_e : float # amplification factor 
+ β_e, β_Φ, β_π : floats # damping / coupling coefficients 
+FUNCTION N0_VALID(intseq, op) -> bool 
+------------------------------------- 
+ # Implement N■ rules over the extended intseq ⊕ op  # Example only; full semantics can be refined. 
+ extended = intseq + [op] 
+ if op == '^': 
+ if '()' not in intseq and '×' not in intseq: 
+ return False 
+ if op == '×': 
+ # require at least two prior supports; here simplified  if len(intseq) < 1: 
+ return False 
+ if op == '÷': 
+ if '()' not in intseq and '×' not in intseq: 
+ return False 
+ # Additional constraints for '+', '-' etc as needed 
+ return True 
+FUNCTION UPDATE_TIER1_NODE(node: Node) -> Node ---------------------------------------------- 
+ # D■: Micro-history / neighbor integration 
+ neighbors = node.neighbors 
+ if neighbors is empty: 
+ Φ_bar = node.Φ 
+ e_bar = node.e 
+ π_bar = node.π 
+ else: 
+ Φ_bar = average(n.Φ for n in neighbors) 
+ e_bar = average(n.e for n in neighbors) 
+ π_bar = average(n.π for n in neighbors) 
+ dΦ = Φ_bar - node.Φ 
+ de = e_bar - node.e 
+ dπ = π_bar - node.π 
+ # U■: Projection 
+ Φ_pred = node.Φ + η_Φ * dΦ 
+ e_pred = node.e + η_e * de
+ π_pred = node.π + η_π * dπ 
+ # A■: Amplifier on e 
+ if abs(de) > τ_e and N0_VALID(node.intseq, '^'): 
+ e_amp = e_pred + α_e * de 
+ new_intseq = node.intseq + ['^'] 
+ else: 
+ e_amp = e_pred 
+ new_intseq = node.intseq 
+ # S■: T-scalar lock on e 
+ e_next = e_amp + β_e * (T - e_amp) 
+ # Optional smooth couplings for Φ and π 
+ Φ_next = Φ_pred + β_Φ * f_couple_phi(e_next, node)  π_next = π_pred + β_π * f_couple_pi(e_next, node, neighbors) 
+ # Truth and phase updates based on any new '÷' or PRS logic  new_truth = update_truth_state(node.truth, new_intseq)  new_theta = update_phase_angle(node.θ, new_truth) 
+ # Assemble updated node 
+ updated = Node() 
+ updated.Φ = Φ_next 
+ updated.e = e_next 
+ updated.π = π_next 
+ updated.θ = new_theta 
+ updated.intseq = new_intseq 
+ updated.truth = new_truth 
+ updated.neighbors = node.neighbors 
+ return updated 
+FUNCTION UPDATE_TIER1(graph: Graph) -> Graph -------------------------------------------- 
+ # Single global Tier-1 step for all nodes. 
+ new_nodes = empty list 
+ for node in graph.nodes: 
+ updated = UPDATE_TIER1_NODE(node) 
+ new_nodes.append(updated) 
+ # Reconnect neighbors by index or reference as needed  graph.nodes = new_nodes 
+ return graph 
+5. TIER-2: WEBLET / LOCAL TOPOLOGY AUTOMATON (Ω■) -------------------------------------------------- 
+Tier-2 acts on connected subgraphs ("weblets") that have sufficient structural and coherence activity. 
+WEBLET DEFINITION 
+----------------- 
+A weblet W is a subgraph (V_W, E_W) of G such that: - |V_W| ≥ size_min,
+- average Φ_v over v ∈ V_W ≥ Φ_threshold, 
+- average π_v over v ∈ V_W ≥ π_threshold. 
+We associate a compact state to each weblet: 
+ Φ_W = average(Φ_v over v ∈ V_W) 
+ e_W = average(e_v over v ∈ V_W) 
+ π_W = average(π_v over v ∈ V_W) 
+ INTSEQ_W : list of edge-level motifs ((), ×, ^, ÷, +, -)  describing recent topological changes within W. 
+Tier-2 apex: 
+ Ω■ = {D■, U■, A■, S■} 
+5.1 D■ : TOPOLOGY MEMORY INTEGRATOR 
+----------------------------------- 
+D■ computes a topology summary: 
+ - number of loops in W, 
+ - clustering coefficient, 
+ - counts of specific motifs (triangles, squares, chains),  - any geometry-ladder features (e.g., toroidal, helical patterns). 
+Outputs a compressed topology signature: 
+ ■_G_W = (loop_count, clustering, motif_counts, ...) 
+5.2 U■ : PATH PROJECTION 
+------------------------ 
+Given ■_G_W, Φ_W, e_W, π_W, propose candidate edge operations: 
+- edge_add_candidates: list of node pairs (u, v) to connect - edge_del_candidates: list of edges (u, v) to remove 
+Example heuristic: 
+ For non-adjacent pair (u, v) in V_W: 
+ If adding (u, v) would close a small loop and 
+ predicted to increase π_W, 
+ then (u, v) is a candidate for addition. 
+ For edge (u, v) in E_W: 
+ If w_uv is very low OR region has low π and high |e|,  then (u, v) is a candidate for deletion. 
+5.3 A■ : RESONANT PATH AMPLIFIER 
+-------------------------------- 
+Filter candidates using N■ validity at the weblet level: 
+ - Adding an edge can be tagged as '+', '×', or '()' motif.  - Removing an edge can be tagged as '-', '÷'. 
+For each candidate operation op in {add_edge, del_edge}:
+ if N0_VALID(INTSEQ_W, op_tag) is TRUE and 
+ op is predicted to increase coherence (π_W) or 
+ reduce harmful tension (e_W): 
+ keep op 
+ else: 
+ discard op 
+Additionally, for edges that belong to TC-favored motifs 
+(e.g., forming a ring, helix, lattice fragment), increase w_uv 
+to bias stability. 
+5.4 S■ : LOOP / WEB STABILIZER 
+------------------------------- 
+Apply a controlled subset of the amplified candidate operations 
+to ensure bounded, non-chaotic evolution: 
+- Enforce max_degree for each node in V_W. 
+- Prevent over-dense subgraphs that yield brittle structures. 
+- Optionally enforce target motif frequencies (e.g., prefer 
+ moderate numbers of small loops rather than a clique). 
+S■ thereby stabilizes the weblet geometry into coherent 
+but exploratory web structures. 
+6. TIER-2 PSEUDOCODE 
+-------------------- 
+FUNCTION FIND_WEBLETS(graph: Graph) -> list of Weblet 
+----------------------------------------------------- 
+ # Partition the graph into candidate weblets based on Φ and π thresholds.  visited = empty set 
+ weblets = empty list 
+ for node in graph.nodes: 
+ if node in visited: 
+ continue 
+ component = BFS_or_DFS_component(node) # get connected component  mark all nodes in component as visited 
+ Φ_avg = average(n.Φ for n in component) 
+ π_avg = average(n.π for n in component) 
+ if len(component) >= size_min and Φ_avg >= Φ_threshold and π_avg >= π_threshold:  weblet = Weblet() 
+ weblet.nodes = component 
+ weblet.edges = all edges among component nodes 
+ weblet.intseq = derive_weblet_intseq(weblet) # from recent operations  weblets.append(weblet) 
+ return weblets 
+FUNCTION UPDATE_WEBLET_TOPOLOGY(weblet: Weblet) -> Weblet --------------------------------------------------------- 
+ # D■: Topology memory 
+ topo_summary = compute_topology_summary(weblet) # loops, motifs, clustering
+ # U■: Path projection 
+ add_candidates, del_candidates = propose_edge_operations( 
+ weblet, topo_summary 
+ ) 
+ # A■: Resonant path amplifier with N■ filter 
+ filtered_adds = [] 
+ for (u, v) in add_candidates: 
+ op_tag = '+' # or '×' / '()' depending on semantics 
+ if N0_VALID(weblet.intseq, op_tag) and improves_coherence(weblet, u, v, op_tag):  filtered_adds.append((u, v, op_tag)) 
+ filtered_dels = [] 
+ for (u, v) in del_candidates: 
+ op_tag = '-' # or '÷' depending on semantics 
+ if N0_VALID(weblet.intseq, op_tag) and reduces_brittle_tension(weblet, u, v, op_tag): 
+ filtered_dels.append((u, v, op_tag)) 
+ # S■: Apply a bounded subset of operations 
+ apply_limited_operations(weblet, filtered_adds, filtered_dels) 
+ # Update weblet.intseq to reflect motif-level operations 
+ update_weblet_intseq(weblet, filtered_adds, filtered_dels) 
+ return weblet 
+FUNCTION UPDATE_TIER2(graph: Graph) -> Graph 
+-------------------------------------------- 
+ weblets = FIND_WEBLETS(graph) 
+ for W in weblets: 
+ updated_W = UPDATE_WEBLET_TOPOLOGY(W) 
+ write_back_weblet_to_graph(graph, updated_W) 
+ return graph 
+7. GLOBAL SIMULATION LOOP (TIERS 1 AND 2) 
+----------------------------------------- 
+FUNCTION RUN_SCSA_SIMULATION(graph: Graph, steps: int) -> Graph ---------------------------------------------------------------- 
+ for t in range(steps): 
+ # Tier-1: local node updates 
+ graph = UPDATE_TIER1(graph) 
+ # Tier-2: topology / weblet updates 
+ graph = UPDATE_TIER2(graph) 
+ # Optional: Tier-3 and Tier-4 logic could be layered here: 
+ # - identify coherent weblets as agents (spiders), 
+ # - run agent-level policy updates, 
+ # - manage interactions between agents (meta-graph). 
+ return graph
+END OF SPECIFICATION
