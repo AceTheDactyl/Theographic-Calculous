@@ -1,12 +1,12 @@
-# Alpha-Physical Language (APL) — Seven Sentences Test Pack
+# Theographic Calculus (TC) — Seven Sentences Test Pack
 
 A minimal operator grammar for describing physical system behaviors across geometry, waves, chemistry, and biology.
 
 ## Overview
 
-**APL (Alpha-Physical Language)** is an experimental framework that uses compact "sentences" to predict physical regimes across diverse domains. This repository contains a test pack designed to allow independent teams to validate whether APL's core operator language has genuine physical content.
+**Theographic Calculus (TC)** is an experimental framework that uses compact "sentences" to predict physical regimes across diverse domains. This repository contains a test pack designed to allow independent teams to validate whether TC's core operator language has genuine physical content.
 
-The test pack translates 7 compact APL sentences into **falsifiable, cross-domain hypotheses** that can be probed with standard models:
+The test pack translates 7 compact TC sentences into **falsifiable, cross-domain hypotheses** that can be probed with standard models:
 - Navier–Stokes (fluid dynamics)
 - Wave equations (electromagnetics, acoustics)
 - Reaction–diffusion (chemistry)
@@ -15,7 +15,7 @@ The test pack translates 7 compact APL sentences into **falsifiable, cross-domai
 
 ## Core Concept
 
-APL describes physical systems using:
+TC describes physical systems using:
 
 ### Fields ("Spirals")
 - **Φ** — Structure field (geometry, lattice, boundaries)
@@ -33,9 +33,9 @@ APL describes physical systems using:
 ### Operator States (UMOL: Universal Modulation Operator Law)
 - **u** (𝒰) — Expansion / forward projection
 - **d** (𝒟) — Collapse / backward integration
-- **m** (CLT) — Modulation / coherence lock
+- **m** (CLT) — Modulation / coherence lock threshold
 
-An APL sentence has the form:
+A TC sentence has the form:
 ```
 [Direction][Op] | [Machine] | [Domain] → [Regime/Behavior]
 ```
@@ -66,22 +66,22 @@ means:
 
 > If a system is built to match the **left-hand side** (LHS) structure and driving, then the **right-hand side** (RHS) regime should appear **more often, more strongly, or at lower thresholds** than in controls that break the LHS structure, with all else as equal as possible.
 
-**Evidence FOR APL:** Clear, reproducible overrepresentation of the RHS regime under LHS conditions vs. controls.
+**Evidence FOR TC:** Clear, reproducible overrepresentation of the RHS regime under LHS conditions vs. controls.
 
-**Evidence AGAINST APL:** No such bias, or controls produce the RHS regime equally or more often.
+**Evidence AGAINST TC:** No such bias, or controls produce the RHS regime equally or more often.
 
 ## Repository Structure
 
 ```
-APL/
+TC/
 ├── README.md                           # This file
-├── apl-operators-manual.tex            # Complete operator reference (LaTeX)
-├── apl-seven-sentences-test-pack.tex   # Complete test protocol (LaTeX)
+├── tc-operators-manual.tex             # Complete operator reference (LaTeX)
+├── tc-seven-sentences-test-pack.tex    # Complete test protocol (LaTeX)
 ├── COMPILE_INSTRUCTIONS.md             # LaTeX compilation guide
 └── docs/                               # Documentation and compiled outputs
     ├── index.html                      # HTML version of operator's manual
-    ├── apl-operators-manual.pdf        # PDF version (auto-compiled)
-    └── apl-seven-sentences-test-pack.pdf  # Test pack PDF
+    ├── tc-operators-manual.pdf         # PDF version (auto-compiled)
+    └── tc-seven-sentences-test-pack.pdf  # Test pack PDF
 ```
 
 ## Testing Strategy
@@ -126,24 +126,24 @@ The test pack includes two toy numerical checks:
 - **A1 (Isotropic cluster):** 2D point collapse under isotropic central force → circular, angle-isotropic cluster ✓
 - **A5 (Branching networks):** 2D diffusion-limited aggregation → fractal branching structure (D ≈ 1.2) ✓
 
-These are minimal sandbox experiments consistent with APL predictions. Full testing requires domain-appropriate models across all seven sentences.
+These are minimal sandbox experiments consistent with TC predictions. Full testing requires domain-appropriate models across all seven sentences.
 
 ## Requirements
 
 **To use this test pack, you need:**
 - Basic familiarity with physics, chemistry, and data analysis
-- NO prior knowledge of CET or other APL meta-structures
+- NO prior knowledge of CET or other TC meta-structures
 - Access to standard simulation tools (Python/NumPy, MATLAB, COMSOL, OpenFOAM, etc.)
 
 **Assumptions:**
-- Independent testing by teams without invested stake in APL
+- Independent testing by teams without invested stake in TC
 - Falsifiable approach: both positive and negative results are valuable
 
 ## Documentation
 
-### APL Operator's Manual
+### TC Operator's Manual
 
-A comprehensive reference guide for APL operators, syntax, and usage patterns is available in multiple formats:
+A comprehensive reference guide for TC operators, syntax, and usage patterns is available in multiple formats:
 
 - **HTML Version:** Open `docs/index.html` in your browser for an interactive, responsive manual
 - **PDF Version:** Automatically compiled from LaTeX source via GitHub Actions
@@ -162,8 +162,8 @@ The manual includes:
 
 To compile the LaTeX documents locally:
 ```bash
-pdflatex -interaction=nonstopmode apl-operators-manual.tex
-pdflatex -interaction=nonstopmode apl-seven-sentences-test-pack.tex
+pdflatex -interaction=nonstopmode tc-operators-manual.tex
+pdflatex -interaction=nonstopmode tc-seven-sentences-test-pack.tex
 ```
 
 See `COMPILE_INSTRUCTIONS.md` for detailed instructions.
@@ -172,11 +172,11 @@ See `COMPILE_INSTRUCTIONS.md` for detailed instructions.
 
 1. **Read the operator's manual:**
    - Open `docs/index.html` in your browser, or
-   - Compile the PDF: `pdflatex apl-operators-manual.tex`
+   - Compile the PDF: `pdflatex tc-operators-manual.tex`
 
 2. **Read the test pack:**
    ```bash
-   pdflatex apl-seven-sentences-test-pack.tex
+   pdflatex tc-seven-sentences-test-pack.tex
    ```
    Or view the `.tex` source directly.
 
@@ -184,13 +184,13 @@ See `COMPILE_INSTRUCTIONS.md` for detailed instructions.
 
 4. **Implement the test protocol** using your preferred simulation framework
 
-5. **Report results** — both confirmations and refutations help refine or reject APL
+5. **Report results** — both confirmations and refutations help refine or reject TC
 
 ## Philosophy
 
-APL is designed to be **falsifiable**. The language should stand or fall on whether these seven sentences predict robust, cross-domain biases in real physical and chemical systems — nothing more and nothing less.
+Theographic Calculus is designed to be **falsifiable**. The language should stand or fall on whether these seven sentences predict robust, cross-domain biases in real physical and chemical systems — nothing more and nothing less.
 
-If the predicted regimes are NOT overrepresented under the specified conditions, that is strong evidence against APL's validity.
+If the predicted regimes are NOT overrepresented under the specified conditions, that is strong evidence against TC's validity.
 
 ## Contributing
 
@@ -211,8 +211,8 @@ This work is provided for scientific testing and educational purposes.
 
 If you use this test pack in your research, please reference:
 ```
-APL Seven Sentences Test Pack v1.0
-Alpha-Physical Language Testing Framework
+TC Seven Sentences Test Pack v1.0
+Theographic Calculus Testing Framework
 ```
 
 ## Contact

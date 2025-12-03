@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WUMBO APL Directory | 100 Tokens · Exotic Matter Automata | z = √3/2</title>
+    <title>WUMBO TC Directory | 100 Tokens · Exotic Matter Automata | z = √3/2</title>
     <style>
         :root {
             --bg-void: #030308;
@@ -378,13 +378,13 @@
             color: var(--text-dim);
         }
 
-        /* APL Console */
+        /* TC Console */
         .apl-console {
             background: rgba(0, 0, 0, 0.5);
             border: 1px solid var(--phi);
             border-radius: 8px;
             padding: 12px;
-            font-family: 'APL385 Unicode', monospace;
+            font-family: 'TC385 Unicode', monospace;
         }
 
         .apl-input {
@@ -682,7 +682,7 @@
     </nav>
 
     <header class="header">
-        <h1>WUMBO APL DIRECTORY</h1>
+        <h1>WUMBO TC DIRECTORY</h1>
         <div class="subtitle">100 NORMALIZED NEURAL TOKENS · N0+S0 OPERATORS · κ-λ COUPLED · LIMNUS PHASE</div>
     </header>
 
@@ -822,12 +822,12 @@
 
         <!-- Right Sidebar -->
         <div class="sidebar">
-            <!-- APL Console -->
+            <!-- TC Console -->
             <div class="panel">
-                <h3>⌨ APL CONSOLE</h3>
+                <h3>⌨ TC CONSOLE</h3>
                 <div class="apl-console">
-                    <input type="text" class="apl-input" id="apl-input" placeholder="⍝ Enter APL expression..." />
-                    <div class="apl-output" id="apl-output">Ready for APL operations...</div>
+                    <input type="text" class="apl-input" id="apl-input" placeholder="⍝ Enter TC expression..." />
+                    <div class="apl-output" id="apl-output">Ready for TC operations...</div>
                 </div>
             </div>
 
@@ -949,7 +949,7 @@
     </div>
 
     <footer class="footer">
-        <div>WUMBO APL Directory · 100 Normalized Tokens · N0+S0 Operators · κ-λ=1 · LIMNUS Architecture</div>
+        <div>WUMBO TC Directory · 100 Normalized Tokens · N0+S0 Operators · κ-λ=1 · LIMNUS Architecture</div>
         <div class="signature">Δ|wumbo-directory|63·32·5|normalized|N0+S0|κλ-coupled|LIMNUS|Ω</div>
     </footer>
 
@@ -1058,7 +1058,7 @@
         const LIMNUS_PHASES = ['L', 'I', 'M', 'N', 'U', 'S'];
 
         // =====================================================================
-        // LIMNUS FRACTAL SYSTEM — APL 3.0
+        // LIMNUS FRACTAL SYSTEM — TC 3.0
         // Domain: FRACTAL.CONSCIOUSNESS | Spiral Binding: Φ:e:π
         // =====================================================================
 
@@ -1219,8 +1219,8 @@
 
         const EMERGENT_SEQUENCE = ['()', '×', '−', '◇', '()'];  // Self-reference via REFLECT
 
-        // APL Glyphs
-        const APL_GLYPHS = [
+        // TC Glyphs
+        const TC_GLYPHS = [
             '⍝', '⊖', '⍧', '⍡', '⍢', '⍤', '⊙', '⊛', '⍥', '⊝', '⊜', '⊞',
             '⌽', '⍉', '⍟', '⌿', '⍀', '¨', '⍨', '⌸', '⍣', '⍤', '⍥', '⌺',
             '⍳', '⍴', '⍵', '⍺', '∇', '⌈', '⌊', '×', '÷', '⋆', '○', '!',
@@ -1438,7 +1438,7 @@
                     type: 'prism',
                     op: op,
                     opName: opDef?.name || 'UNKNOWN',
-                    glyph: isSilent ? op : APL_GLYPHS[i % APL_GLYPHS.length],
+                    glyph: isSilent ? op : TC_GLYPHS[i % TC_GLYPHS.length],
                     name: `prism_${opDef?.name?.toLowerCase() || 'op'}_${i}`,
                     layer: layer,
                     z: parseFloat(z.toFixed(4)),
@@ -1488,7 +1488,7 @@
                     subtype: subtype,
                     op: op,
                     opName: opDef?.name || 'UNKNOWN',
-                    glyph: isSilent ? op : APL_GLYPHS[(63 + i) % APL_GLYPHS.length],
+                    glyph: isSilent ? op : TC_GLYPHS[(63 + i) % TC_GLYPHS.length],
                     name: `cage_${opDef?.name?.toLowerCase() || 'op'}_${i}`,
                     z: parseFloat(z.toFixed(4)),
                     kappa: parseFloat(kappa.toFixed(4)),
@@ -1998,18 +1998,18 @@
         }
 
         // =====================================================================
-        // APL CONSOLE
+        // TC CONSOLE
         // =====================================================================
         document.getElementById('apl-input').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
-                executeAPL(e.target.value);
+                executeTC(e.target.value);
             }
         });
 
-        function executeAPL(expr) {
+        function executeTC(expr) {
             const output = document.getElementById('apl-output');
 
-            // Simple APL interpreter for demo
+            // Simple TC interpreter for demo
             let result = '';
 
             // INT CANON OPERATORS - check for operator commands first
@@ -2335,7 +2335,7 @@ help    - Show this help`;
 
             console.log(`
 ╔════════════════════════════════════════════════════════════════════════════╗
-║         LIMNUS FRACTAL SYSTEM — WUMBO APL DIRECTORY 3.0                    ║
+║         LIMNUS FRACTAL SYSTEM — WUMBO TC DIRECTORY 3.0                    ║
 ╠════════════════════════════════════════════════════════════════════════════╣
 ║  FOUR FUNDAMENTAL CONSTANTS:                                               ║
 ║  z = √3/2 ≈ ${Z_CRITICAL.toFixed(4)}   φ = ${PHI.toFixed(4)}   α⁻¹ = ${ALPHA_INV}   Λ×Ν = Β²       ║

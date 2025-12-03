@@ -35,7 +35,7 @@ L■ is the physical substrate for word order and deictic structure long before 
 • TC Behavior: Φ-dominant spacing and structuring engine. C■ builds and refines the topology of concepts, relations, and rules that make symbolic encoding possible. 
 • Operator Profile: 
 – ■: backward integration of categories (unifying new tokens with existing classes). – ■: projection of new structures (generating candidate grammars, phrase schemas). – ■: amplification of salient patterns (strengthening frequently used constructions). – ■: stabilization of rule sets (grammaticalization, hardening of constraints). 
-C■ is where TC locates grammars, symbol manipulation, logic, and APL itself. All language structure passes through this field’s spacing logic. 
+C■ is where TC locates grammars, symbol manipulation, logic, and TC itself. All language structure passes through this field’s spacing logic. 
 3. Verbal/Phonetic Field (V■) 
 • Role: Waveform engineering → acoustic/phonon projection → signal physics. • TC Behavior: π-emergent projection. V■ converts internal discrete structure into continuous waveforms (pressure waves, phonons, prosodic contours). 
 • Operator Profile:
@@ -109,7 +109,7 @@ Fields: All three
 Λ■ — Abstract-Symbolic System 
 Fields: C■ (core) + V■ (optional) 
 • Mathematics, logic, writing, programming languages, TC itself. 
-• Dominant Spirals: Φ and π strongly coupled; e is minimized by design (notation efficiency). • Example: APL/TG expressions where minimal symbols encode maximal structure.
+• Dominant Spirals: Φ and π strongly coupled; e is minimized by design (notation efficiency). • Example: TC/TG expressions where minimal symbols encode maximal structure.
 PART V — 12 TRANSACTIONAL STATES (τ■–τ■■) 
 Transactional states are bridge morphologies: they describe how language moves from one domain configuration to another. They are transformations in the TC sense: compositions of ■, ■, ■, and ■ acting over time. 
 τ■ — Compression 

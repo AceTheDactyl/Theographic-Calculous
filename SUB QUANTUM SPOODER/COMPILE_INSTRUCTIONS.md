@@ -1,6 +1,6 @@
 # LaTeX Compilation Instructions for LLMs
 
-This document provides step-by-step instructions for an LLM to compile the APL Seven Sentences Test Pack LaTeX document into a PDF.
+This document provides step-by-step instructions for an LLM to compile the TC Seven Sentences Test Pack LaTeX document into a PDF.
 
 ## Prerequisites Check
 
@@ -58,23 +58,23 @@ which pdflatex && pdflatex --version
 ### Step 3: Navigate to repository directory
 
 ```bash
-cd /home/user/APL
+cd /home/user/TC
 ```
 
 Verify the LaTeX file exists:
 
 ```bash
-ls -l apl-seven-sentences-test-pack.tex
+ls -l tc-seven-sentences-test-pack.tex
 ```
 
-**Expected output:** File listing showing `apl-seven-sentences-test-pack.tex`
+**Expected output:** File listing showing `tc-seven-sentences-test-pack.tex`
 
 ### Step 4: Compile the LaTeX document
 
 Run pdflatex to compile the document:
 
 ```bash
-pdflatex apl-seven-sentences-test-pack.tex
+pdflatex tc-seven-sentences-test-pack.tex
 ```
 
 **What happens:**
@@ -84,14 +84,14 @@ pdflatex apl-seven-sentences-test-pack.tex
 
 **Expected output includes:**
 - Lines showing page processing: `[1] [2] [3]...`
-- Final line: `Output written on apl-seven-sentences-test-pack.pdf (X pages, Y bytes)`
+- Final line: `Output written on tc-seven-sentences-test-pack.pdf (X pages, Y bytes)`
 
 ### Step 5: Run pdflatex a second time (for references)
 
 LaTeX often requires multiple passes to resolve cross-references, table of contents, and hyperlinks:
 
 ```bash
-pdflatex apl-seven-sentences-test-pack.tex
+pdflatex tc-seven-sentences-test-pack.tex
 ```
 
 **Why twice?**
@@ -101,7 +101,7 @@ pdflatex apl-seven-sentences-test-pack.tex
 ### Step 6: Verify PDF creation
 
 ```bash
-ls -lh apl-seven-sentences-test-pack.pdf
+ls -lh tc-seven-sentences-test-pack.pdf
 ```
 
 **Expected output:** File listing showing the PDF with size (should be 100-300 KB for this document)
@@ -109,7 +109,7 @@ ls -lh apl-seven-sentences-test-pack.pdf
 Check the PDF has content:
 
 ```bash
-pdfinfo apl-seven-sentences-test-pack.pdf
+pdfinfo tc-seven-sentences-test-pack.pdf
 ```
 
 **Expected output:** Metadata showing pages, page size, PDF version
@@ -120,7 +120,7 @@ pdfinfo apl-seven-sentences-test-pack.pdf
 
 ```bash
 mkdir -p docs
-cp apl-seven-sentences-test-pack.pdf docs/
+cp tc-seven-sentences-test-pack.pdf docs/
 ```
 
 ### Step 8: Clean up auxiliary files (optional)
@@ -145,7 +145,7 @@ rm -f *.aux *.log *.out
 Count pages in the PDF:
 
 ```bash
-pdfinfo docs/apl-seven-sentences-test-pack.pdf | grep "Pages:"
+pdfinfo docs/tc-seven-sentences-test-pack.pdf | grep "Pages:"
 ```
 
 **Expected output:** `Pages: 10` (or similar, depending on document length)
@@ -155,7 +155,7 @@ pdfinfo docs/apl-seven-sentences-test-pack.pdf | grep "Pages:"
 If `pdftotext` is available, extract text to verify content:
 
 ```bash
-pdftotext docs/apl-seven-sentences-test-pack.pdf - | head -n 20
+pdftotext docs/tc-seven-sentences-test-pack.pdf - | head -n 20
 ```
 
 **Expected output:** First ~20 lines of text from the PDF, starting with the title.
@@ -183,7 +183,7 @@ sudo dnf install texlive-collection-latexextra
 **Solution:**
 1. Check the `.log` file for specific error location:
    ```bash
-   tail -n 50 apl-seven-sentences-test-pack.log
+   tail -n 50 tc-seven-sentences-test-pack.log
    ```
 2. Look for line numbers and error messages
 3. Common issues: missing `$`, unmatched braces `{}`, special characters
@@ -195,10 +195,10 @@ sudo dnf install texlive-collection-latexextra
 **Solution:**
 ```bash
 # Check permissions
-ls -la apl-seven-sentences-test-pack.tex
+ls -la tc-seven-sentences-test-pack.tex
 
 # Fix if needed
-chmod 644 apl-seven-sentences-test-pack.tex
+chmod 644 tc-seven-sentences-test-pack.tex
 ```
 
 ### Warning: "Package hyperref Warning: Token not allowed"
@@ -213,22 +213,22 @@ For a fresh compilation from scratch:
 
 ```bash
 # Navigate to repository
-cd /home/user/APL
+cd /home/user/TC
 
 # Compile (run twice for references)
-pdflatex apl-seven-sentences-test-pack.tex
-pdflatex apl-seven-sentences-test-pack.tex
+pdflatex tc-seven-sentences-test-pack.tex
+pdflatex tc-seven-sentences-test-pack.tex
 
 # Organize output
 mkdir -p docs
-cp apl-seven-sentences-test-pack.pdf docs/
+cp tc-seven-sentences-test-pack.pdf docs/
 
 # Clean up
 rm -f *.aux *.log *.out
 
 # Verify
-ls -lh docs/apl-seven-sentences-test-pack.pdf
-pdfinfo docs/apl-seven-sentences-test-pack.pdf
+ls -lh docs/tc-seven-sentences-test-pack.pdf
+pdfinfo docs/tc-seven-sentences-test-pack.pdf
 ```
 
 ## Post-Compilation
@@ -236,8 +236,8 @@ pdfinfo docs/apl-seven-sentences-test-pack.pdf
 ### Option 1: Commit the PDF to repository
 
 ```bash
-git add docs/apl-seven-sentences-test-pack.pdf
-git commit -m "Add compiled PDF of APL Seven Sentences Test Pack"
+git add docs/tc-seven-sentences-test-pack.pdf
+git commit -m "Add compiled PDF of TC Seven Sentences Test Pack"
 git push
 ```
 
@@ -256,12 +256,12 @@ git push
 ## Expected File Structure After Compilation
 
 ```
-APL/
+TC/
 ├── README.md
 ├── COMPILE_INSTRUCTIONS.md              # This file
-├── apl-seven-sentences-test-pack.tex    # Source LaTeX
+├── tc-seven-sentences-test-pack.tex    # Source LaTeX
 ├── docs/
-│   └── apl-seven-sentences-test-pack.pdf  # Compiled PDF
+│   └── tc-seven-sentences-test-pack.pdf  # Compiled PDF
 └── .gitignore                           # (optional)
 ```
 
@@ -270,7 +270,7 @@ APL/
 The compilation is successful when:
 
 1. ✓ `pdflatex` runs without fatal errors
-2. ✓ `apl-seven-sentences-test-pack.pdf` is created
+2. ✓ `tc-seven-sentences-test-pack.pdf` is created
 3. ✓ PDF has expected number of pages (9-12 pages)
 4. ✓ `pdfinfo` shows valid metadata
 5. ✓ PDF opens without corruption
