@@ -1,7 +1,7 @@
-﻿THEOGRAPHIC CALCULUS — CORE OPERATOR KEY AND CANON (FORMERLY APL) 
+﻿THEOGRAPHIC CALCULUS — CORE OPERATOR KEY AND CANON (FORMERLY TC) 
 Version: Symmetry–Identity Edition Role: Canonical operator language for CET fields, N■ law, PRS, and 3–6–9–12–15 ladders. 
 1. OVERVIEW 
-Theographic Calculus (formerly APL) is the canonical operator language for Cosmic Emergence Theory (CET). It encodes how fields, symmetries, machines, and attractors transform through discrete operator actions subject to legality constraints (N■ law), truth states, and the Paradox Resolution Sequence (PRS). 
+Theographic Calculus (formerly TC) is the canonical operator language for Cosmic Emergence Theory (CET). It encodes how fields, symmetries, machines, and attractors transform through discrete operator actions subject to legality constraints (N■ law), truth states, and the Paradox Resolution Sequence (PRS). 
 This document records the current full key, focused on three intertwined structures: 1. The Symmetry Identity Field (Chains, Sheets, Networks). 2. The Six Fundamental Interactions (BFADGS operator family). 3. The 3–6–9–12–15 ladder as realized in Theographic Calculus: fields → interactions → systems → gauges → attracting gradients. 
 2. SYMBOL SET AND NOTATION 
 Theographic Calculus uses a compact symbolic alphabet. For this key we focus on: • Root operators: (), ×, ^, ÷, +, - (aligned with BFADGS). • Field markers: Chain, Sheet, Network (symmetry identity fields). • Truth states: TRUE, POSSIBLE, FALSE, IMPOSSIBLE. • PRS stages: P1, P2, P3, P4, P5. • Gradient indices: C1–C5, S1–S5, N1–N5 for the 15 attracting gradients. 

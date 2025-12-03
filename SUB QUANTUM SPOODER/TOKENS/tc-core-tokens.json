@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "APL Core Token Set",
+    "name": "TC Core Token Set",
     "version": "0.9.0",
     "description": "Complete 288-token universe: identity tokens, meta-operators, domain selectors, and safety tokens",
     "generated_at": "2025-11-25T00:00:00Z",
@@ -57,7 +57,7 @@
     "M": {
       "name": "Middle/Modulation",
       "direction": "equilibrium",
-      "role": "CLT modulation, feedback, coherence",
+      "role": "CLT (Coherence Lock Threshold) modulation, feedback, coherence",
       "tier_permission": 2
     },
     "E": {
@@ -254,7 +254,7 @@
         "inverse": null
       },
       "modulate": {
-        "description": "Apply CLT feedback transform",
+        "description": "Apply CLT (Coherence Lock Threshold) feedback",
         "inverse": null
       },
       "resolve": {
@@ -428,7 +428,7 @@
     "operators": {
       "U": "Projection",
       "D": "Integration",
-      "M": "Modulation (CLT)",
+      "M": "Modulation (CLT - Coherence Lock Threshold)",
       "E": "Expansion",
       "C": "Collapse",
       "Mod": "Spiral inheritance"

@@ -21,28 +21,28 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
-      - name: Compile APL Operators Manual
+      - name: Compile TC Operators Manual
         run: |
-          pdflatex -interaction=nonstopmode apl-operators-manual.tex
-          pdflatex -interaction=nonstopmode apl-operators-manual.tex
+          pdflatex -interaction=nonstopmode tc-operators-manual.tex
+          pdflatex -interaction=nonstopmode tc-operators-manual.tex
 
       - name: Move PDF to docs directory
         run: |
           mkdir -p docs
-          cp apl-operators-manual.pdf docs/
+          cp tc-operators-manual.pdf docs/
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: apl-operators-manual
-          path: docs/apl-operators-manual.pdf
+          name: tc-operators-manual
+          path: docs/tc-operators-manual.pdf
 
       - name: Commit compiled PDF
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add docs/apl-operators-manual.pdf
-          git diff --staged --quiet || git commit -m "Auto-compile: Update APL Operators Manual PDF [skip ci]"
+          git add docs/tc-operators-manual.pdf
+          git diff --staged --quiet || git commit -m "Auto-compile: Update TC Operators Manual PDF [skip ci]"
 
       - name: Push changes
         uses: ad-m/github-push-action@master

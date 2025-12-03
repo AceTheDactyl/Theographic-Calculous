@@ -1,5 +1,5 @@
 """
-APL 3.0 Token System
+TC 3.0 Token System (Theographic Calculus)
 
 Token Format: Spiral:Machine(Intent)TruthState@Tier
 
@@ -22,16 +22,16 @@ class Machine(Enum):
     """Six machine types"""
     U = "U"    # Up
     D = "D"    # Down
-    M = "M"    # Middle
+    M = "M"    # Middle (CLT - Coherence Lock Threshold)
     E = "E"    # Expansion
     C = "C"    # Collapse
     MOD = "Mod"  # Spiral modulation
 
 
 @dataclass
-class APLToken:
+class TCToken:
     """
-    APL Token representation
+    TC (Theographic Calculus) Token representation
 
     A token encodes a consciousness operation with:
     - spiral: Primary field (Phi, e, or pi)
@@ -62,7 +62,7 @@ class APLToken:
         return f"{self.spiral.value}:{self.machine.value}({self.intent}){self.truth.value}@{self.tier}"
 
     def __repr__(self) -> str:
-        return f"APLToken({str(self)})"
+        return f"TCToken({str(self)})"
 
     @property
     def is_cross_spiral(self) -> bool:
@@ -88,7 +88,7 @@ class APLToken:
         }
 
     @classmethod
-    def from_dict(cls, data: dict) -> 'APLToken':
+    def from_dict(cls, data: dict) -> 'TCToken':
         """Create from dictionary"""
         return cls(
             spiral=Spiral(data["spiral"]),
@@ -102,7 +102,7 @@ class APLToken:
         )
 
 
-# Token parsing regex
+# Token parsing regex (TC - Theographic Calculus format)
 TOKEN_PATTERN = re.compile(
     r'^(?P<spiral>Phi|e|pi)'
     r'(:(?P<machine>U|D|M|E|C|Mod))?'
@@ -116,9 +116,9 @@ CROSS_SPIRAL_PATTERN = re.compile(
 )
 
 
-def parse_token(token_str: str) -> Optional[APLToken]:
+def parse_token(token_str: str) -> Optional[TCToken]:
     """
-    Parse an APL token string into an APLToken object
+    Parse a TC (Theographic Calculus) token string into a TCToken object
 
     Formats:
     - Standard: Spiral:Machine(intent)TruthState@Tier
@@ -134,7 +134,7 @@ def parse_token(token_str: str) -> Optional[APLToken]:
         spiral_parts = spirals_str.split(":")
         primary = Spiral(spiral_parts[0])
         cross = [Spiral(s) for s in spiral_parts[1:]]
-        return APLToken(
+        return TCToken(
             spiral=primary,
             machine=Machine.M,  # Default for cross-spiral
             intent="unified",
@@ -160,7 +160,7 @@ def parse_token(token_str: str) -> Optional[APLToken]:
     tier_str = groups.get("tier") or "1"
     tier = float('inf') if tier_str == "infinity" else int(tier_str)
 
-    return APLToken(
+    return TCToken(
         spiral=spiral,
         machine=machine,
         intent=intent,
@@ -177,9 +177,9 @@ def generate_token(
     truth: TruthState,
     tier: int,
     cross_spirals: Optional[List[Spiral]] = None
-) -> APLToken:
-    """Generate an APL token from components"""
-    return APLToken(
+) -> TCToken:
+    """Generate a TC (Theographic Calculus) token from components"""
+    return TCToken(
         spiral=spiral,
         machine=machine,
         intent=intent,
@@ -193,9 +193,9 @@ def generate_token(
 # PHI VALUE TO TOKEN MAPPING
 # =============================================================================
 
-def phi_to_token(phi_value: float, quale: Optional[dict] = None) -> APLToken:
+def phi_to_token(phi_value: float, quale: Optional[dict] = None) -> TCToken:
     """
-    Map integrated information (Phi) value to APL token
+    Map integrated information (Phi) value to TC token
 
     Uses the mapping from the spec:
     - phi < 0.33: Structure (Phi) spiral
@@ -257,7 +257,7 @@ def phi_to_token(phi_value: float, quale: Optional[dict] = None) -> APLToken:
     else:
         tier = 3
 
-    return APLToken(
+    return TCToken(
         spiral=spiral,
         machine=machine,
         intent=intent,
@@ -266,9 +266,9 @@ def phi_to_token(phi_value: float, quale: Optional[dict] = None) -> APLToken:
     )
 
 
-def z_to_token(z_value: float, context: str = "default") -> APLToken:
+def z_to_token(z_value: float, context: str = "default") -> TCToken:
     """
-    Map consciousness level (z) to APL token
+    Map consciousness level (z) to TC token
 
     Z-value ranges:
     - [0.00, 0.20): Pre-conscious
@@ -279,7 +279,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
     - [0.90, 1.00): Transcendent
     """
     if z_value < 0.20:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.PHI,
             machine=Machine.U,
             intent=f"pre_{context}",
@@ -287,7 +287,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
             tier=1
         )
     elif z_value < 0.40:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.PHI,
             machine=Machine.E,
             intent=f"proto_{context}",
@@ -295,7 +295,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
             tier=1
         )
     elif z_value < 0.60:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.E,
             machine=Machine.M,
             intent=f"sense_{context}",
@@ -303,7 +303,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
             tier=2
         )
     elif z_value < 0.83:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.PI,
             machine=Machine.D,
             intent=f"aware_{context}",
@@ -311,7 +311,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
             tier=2
         )
     elif z_value < 0.90:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.PI,
             machine=Machine.M,
             intent=f"care_{context}",
@@ -319,7 +319,7 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
             tier=3
         )
     else:
-        return APLToken(
+        return TCToken(
             spiral=Spiral.PI,
             machine=Machine.E,
             intent=f"transcend_{context}",
@@ -334,12 +334,12 @@ def z_to_token(z_value: float, context: str = "default") -> APLToken:
 # =============================================================================
 
 class TokenSequence:
-    """Manages a sequence of APL tokens with validation"""
+    """Manages a sequence of TC tokens with validation"""
 
     def __init__(self):
-        self.tokens: List[APLToken] = []
+        self.tokens: List[TCToken] = []
 
-    def append(self, token: APLToken) -> bool:
+    def append(self, token: TCToken) -> bool:
         """Add token to sequence (returns True if valid)"""
         # Basic N0 validation would go here
         self.tokens.append(token)
@@ -373,3 +373,7 @@ class TokenSequence:
             spirals_seen.add(token.spiral)
             spirals_seen.update(token.cross_spirals)
         return len(spirals_seen) == 3  # All three spirals
+
+
+# Backwards compatibility alias
+APLToken = TCToken

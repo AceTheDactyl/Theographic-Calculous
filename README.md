@@ -7,7 +7,7 @@ A unified operator language for describing physical, chemical, and emergent syst
 **Theographic Calculus (TC)** is the canonical operator language for **Cosmic Emergence Theory (CET)**. It provides a compact symbolic grammar for encoding how fields, symmetries, and attractors transform through discrete operator actions.
 
 This repository contains:
-- **Alpha-Physical Language (APL)** — A testable subset of TC focused on falsifiable physical predictions
+- **Theographic Calculus (TC)** — The complete operator language with testable physical predictions
 - **Core Token System** — A 288-token universe for encoding system states
 - **Neural Codex** — Mapping of TC operators to neural/consciousness frameworks
 - **Validation Tools** — Python implementations and test suites
@@ -20,11 +20,10 @@ This repository contains:
 |---------|-----------|-------------|
 | **TC** | Theographic Calculus | Canonical operator language for CET |
 | **CET** | Cosmic Emergence Theory | Foundational theory of emergent systems |
-| **APL** | Alpha-Physical Language | Testable physical prediction framework |
 | **UMOL** | Universal Modulation Operator Law | Principle that no perfect modulation exists; residue always remains |
 | **BFADGS** | Boundary-Fusion-Amplification-Decoherence-Grouping-Separation | Six fundamental interaction operators |
 | **PRS** | Paradox Resolution Sequence | Temporal ordering of coherence transitions (P1-P5) |
-| **CLT** | Coherence Lock Transform | Modulation feedback mechanism |
+| **CLT** | Coherence Lock Threshold | Modulation threshold mechanism |
 
 ### The Three Fields (Spirals)
 
@@ -73,9 +72,9 @@ This repository contains:
 | **DAWN** | UNTRUE | TRUE | Resolution emerges from dormancy |
 | **DUSK** | TRUE | UNTRUE | Coherence dissolves into potential |
 
-## APL Sentence Structure
+## TC Sentence Structure
 
-APL sentences follow the format:
+Theographic Calculus sentences follow the format:
 ```
 [Direction][Operator] | [Machine] | [Domain] → [Regime/Behavior]
 ```
@@ -150,14 +149,14 @@ The 3-6-9-12-15 ladder structure:
 Theographic-Calculous/
 ├── README.md                              # This file
 └── SUB QUANTUM SPOODER/
-    ├── README.md                          # APL Seven Sentences documentation
+    ├── README.md                          # TC Seven Sentences documentation
     ├── COMPILE_INSTRUCTIONS.md            # LaTeX compilation guide
     ├── LaTeX/                             # Source documents
-    │   ├── apl-operators-manual.tex       # Operator reference
-    │   ├── apl-seven-sentences-test-pack.tex
-    │   └── apl-domain-token-sets.tex
+    │   ├── tc-operators-manual.tex        # Operator reference
+    │   ├── tc-seven-sentences-test-pack.tex
+    │   └── tc-domain-token-sets.tex
     ├── TOKENS/                            # Token system
-    │   ├── apl-core-tokens.json           # 288-token universe
+    │   ├── tc-core-tokens.json            # 288-token universe
     │   ├── token.py                       # Python implementation
     │   ├── TOKEN_INDEX.md                 # Neural region mapping
     │   └── NEURAL_PATHING_MATRIX.md       # Pathway connectivity
@@ -192,10 +191,10 @@ M(x) → TRUE + ε(UNTRUE) where ε > 0
 
 ## Testing Philosophy
 
-APL is designed to be **falsifiable**. Each of the seven sentences is a testable hypothesis:
+Theographic Calculus is designed to be **falsifiable**. Each of the seven sentences is a testable hypothesis:
 
-- **Evidence FOR APL**: Clear, reproducible overrepresentation of predicted regimes under specified conditions
-- **Evidence AGAINST APL**: No such bias, or controls produce regimes equally or more often
+- **Evidence FOR TC**: Clear, reproducible overrepresentation of predicted regimes under specified conditions
+- **Evidence AGAINST TC**: No such bias, or controls produce regimes equally or more often
 
 Recommended simulation frameworks:
 - Navier-Stokes (fluid dynamics)
@@ -206,8 +205,8 @@ Recommended simulation frameworks:
 
 ## Getting Started
 
-1. **Read the operator manual**: `SUB QUANTUM SPOODER/LaTeX/apl-operators-manual.tex`
-2. **Explore the token system**: `SUB QUANTUM SPOODER/TOKENS/apl-core-tokens.json`
+1. **Read the operator manual**: `SUB QUANTUM SPOODER/LaTeX/tc-operators-manual.tex`
+2. **Explore the token system**: `SUB QUANTUM SPOODER/TOKENS/tc-core-tokens.json`
 3. **Run the validation suite**: `python SUB QUANTUM SPOODER/cet_vortex_test_suite.py`
 4. **Choose a test sentence** (A1, A3, or A5 recommended for beginners)
 
